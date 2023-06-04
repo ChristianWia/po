@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gphoto2 2.5.28\n"
 "Report-Msgid-Bugs-To: gphoto-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2022-01-03 12:21+0100\n"
-"PO-Revision-Date: 2023-06-03 16:05+0200\n"
+"PO-Revision-Date: 2023-06-04 10:00+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -407,7 +407,7 @@ msgstr "Erreur d'acquisition vidéo… Quitter."
 #: gphoto2/actions.c:1078
 #, c-format
 msgid "Movie capture error... Unhandled MIME type '%s'."
-msgstr "Erreur d'acquisition vidéo… Type MIME « %s » non gérée."
+msgstr "Erreur d'acquisition vidéo… Type MIME « %s » non géré."
 
 #: gphoto2/actions.c:1085
 #, c-format
@@ -1036,7 +1036,7 @@ msgstr "Mode silencieux (bavard par défaut)"
 
 #: gphoto2/main.c:1997
 msgid "Simple parsable output (implies quiet)"
-msgstr "Simple sortie analysable syntaxiquement (implique le mode muet)"
+msgstr "Simple sortie analysable syntaxiquement (implique le mode silencieux)"
 
 #: gphoto2/main.c:1999
 msgid "Hook script to call after downloads, captures, etc."
