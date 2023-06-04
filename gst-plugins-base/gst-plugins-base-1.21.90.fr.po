@@ -5,14 +5,15 @@
 # Nicolas Velin <nicolas@velin.fr>, 2008.
 # Claude Paroz <claude@2xlibre.net>, 2008-2011.
 # Stéphane Aulery <lkppo@free.fr>, 2015-2022.
+# Christian Wiatr <w9204-fs@yahoo.com>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gst-plugins-base 1.20.0\n"
+"Project-Id-Version: gst-plugins-base 1.21.90\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-13 19:10+0000\n"
-"PO-Revision-Date: 2022-07-05 00:21+0200\n"
-"Last-Translator: Stéphane Aulery <lkppo@free.fr>\n"
+"PO-Revision-Date: 2023-06-04 12:44+0200\n"
+"Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: ext/alsa/gstalsasink.c:605
 msgid "Could not open device for playback in mono mode."
@@ -57,7 +59,7 @@ msgstr "Impossible d’utiliser le périphérique pour l’enregistrement en mod
 #: ext/alsa/gstalsasrc.c:511
 #, c-format
 msgid "Could not open device for recording in %d-channel mode"
-msgstr "Impossible d’utiliser le périphérique pour l'enregistrement en mode %d voie(s)."
+msgstr "Impossible d’utiliser le périphérique pour l'enregistrement en mode %d voie(s)"
 
 #: ext/alsa/gstalsasrc.c:786
 msgid "Could not open audio device for recording. Device is being used by another application."
@@ -101,8 +103,8 @@ msgstr "Ce fichier semble être un fichier texte"
 #: gst/playback/gstplaysink.c:3193 gst/playback/gstplaysink.c:3202
 #: gst/playback/gstplaysink.c:3652 gst/playback/gstplaysink.c:4581
 #: gst/playback/gstplaysinkconvertbin.c:97
-#: gst/playback/gstplaysinkconvertbin.c:117
-#: gst/playback/gsturidecodebin.c:1548 gst/playback/gsturisourcebin.c:1625
+#: gst/playback/gstplaysinkconvertbin.c:117 gst/playback/gsturidecodebin.c:1548
+#: gst/playback/gsturisourcebin.c:1625
 #, c-format
 msgid "Missing element '%s' - check your GStreamer installation."
 msgstr "Élément « %s » manquant — Vérifiez votre installation de GStreamer."
@@ -197,10 +199,8 @@ msgid "Source element is invalid."
 msgstr "Élément source non valide."
 
 #: gst/playback/gsturisourcebin.c:2316
-#, fuzzy
-#| msgid "Source element is invalid."
 msgid "Source element has no pads."
-msgstr "Élément source non valide."
+msgstr "Élément source sans connecteurs."
 
 #: gst/tcp/gsttcpclientsink.c:218
 #, c-format
@@ -217,7 +217,7 @@ msgstr "Ce CD ne contient aucune piste audio"
 
 #: gst-libs/gst/gl/gstglbasesrc.c:446
 msgid "failed to draw pattern"
-msgstr "Tracer du motif en échec"
+msgstr "Echec dans le tracé du motif"
 
 #: gst-libs/gst/gl/gstglbasesrc.c:447
 msgid "A GL error occurred"
@@ -553,7 +553,7 @@ msgstr "Vitesse d’obturation utilisée lors de la capture de l’image (en s)"
 # http://www.blog-couleur.com/?Qu-est-ce-que-l-ouverture-en
 #: gst-libs/gst/tag/tags.c:123
 msgid "capturing focal ratio"
-msgstr "Focal de capture"
+msgstr "focal de capture"
 
 #: gst-libs/gst/tag/tags.c:124
 msgid "Focal ratio (f-number) used when capturing the image"
@@ -858,22 +858,16 @@ msgid "enable/disable trick modes"
 msgstr "activer / désactiver les astuces"
 
 #: tools/gst-play.c:1434
-#, fuzzy
-#| msgid "change audio track"
 msgid "change to previous/next audio track"
-msgstr "modifier la piste audio"
+msgstr "changer de piste audio précédente/suivante"
 
 #: tools/gst-play.c:1435
-#, fuzzy
-#| msgid "change video track"
 msgid "change to previous/next video track"
-msgstr "modifier la piste vidéo"
+msgstr "changer de piste vidéo précédente/suivante"
 
 #: tools/gst-play.c:1436
-#, fuzzy
-#| msgid "change subtitle track"
 msgid "change to previous/next subtitle track"
-msgstr "modifier la piste de sous-titre"
+msgstr "changer de sous-titre de piste précédent/suivant"
 
 #: tools/gst-play.c:1437
 msgid "seek to beginning"
@@ -914,7 +908,7 @@ msgstr "Activer la lecture sans blanc"
 
 #: tools/gst-play.c:1640
 msgid "Enable instantaneous uri changes (only with playbin3)"
-msgstr ""
+msgstr "Autoriser les modifications instantanées d'URI (uniquement avec playbin3)"
 
 #: tools/gst-play.c:1642
 msgid "Shuffle playlist"
@@ -945,10 +939,8 @@ msgid "Do not print any output (apart from errors)"
 msgstr "Ne pas afficher de message en sortie (sauf les erreurs)"
 
 #: tools/gst-play.c:1659
-#, fuzzy
-#| msgid "(default varies depending on 'USE_PLAYBIN' env variable)"
 msgid "Use playbin3 pipeline (default varies depending on 'USE_PLAYBIN' env variable)"
-msgstr "(la valeur par défaut dépend de la variable d'environnement USE_PLAYBIN)"
+msgstr "Utiliser le pipeline playbin3 (la valeur par défaut dépend de la variable d'environnement « USE_PLAYBIN »)"
 
 #: tools/gst-play.c:1664
 msgid "Keep showing the last frame on EOS until quit or playlist change command (gapless is ignored)"
