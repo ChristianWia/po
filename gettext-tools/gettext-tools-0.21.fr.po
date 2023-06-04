@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gettext-tools 0.21\n"
 "Report-Msgid-Bugs-To: bug-gettext@gnu.org\n"
 "POT-Creation-Date: 2020-07-26 21:56+0200\n"
-"PO-Revision-Date: 2023-06-04 18:09+0200\n"
+"PO-Revision-Date: 2023-06-04 19:28+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -1061,7 +1061,7 @@ msgstr "l’élément racine n’est pas « locatingRules »"
 #: src/msggrep.c:434 src/msginit.c:197 src/msguniq.c:283
 #, c-format
 msgid "at most one input file allowed"
-msgstr "Un seul fichier est permis en entrée"
+msgstr "Un fichier au plus est permis en entrée"
 
 #: src/msgattrib.c:380 src/msgcat.c:313 src/msgcomm.c:298 src/msgconv.c:269
 #: src/msgen.c:267 src/msgfilter.c:307 src/msgfmt.c:501 src/msgfmt.c:509
@@ -3705,12 +3705,12 @@ msgstr "définition d'argument ambiguë pour le mot-clef '%.*s'"
 #: src/xg-arglist-parser.c:450
 #, c-format
 msgid "warning: missing context for keyword '%.*s'"
-msgstr ""
+msgstr "avertissement : contexte absent pour le mot-clé « %.*s »"
 
 #: src/xg-arglist-parser.c:475
 #, c-format
 msgid "warning: missing context for plural argument of keyword '%.*s'"
-msgstr ""
+msgstr "avertissement : contexte absent pour argument pluriel du mot-clé « %.*s »"
 
 #: src/xg-arglist-parser.c:496
 #, c-format
@@ -3765,7 +3765,7 @@ msgstr "AVERTISSEMENT : le fichier de règle ITS « %s » n’existe pas"
 #: src/xgettext.c:937
 #, c-format
 msgid "warning: a fallback ITS rule file '%s' is used; it may not be in sync with the upstream"
-msgstr ""
+msgstr "avertissement : utilisation du fichier de repli des règles ITS « %s » ; il peut être désynchronisé avec le flux montant"
 
 #: src/xgettext.c:947
 #, c-format
@@ -4078,7 +4078,7 @@ msgstr "%s%s : AVERTISSEMENT : "
 #: src/xg-message.c:94
 #, c-format
 msgid "Although being used in a format string position, the %s is not a valid %s format string. Reason: %s\n"
-msgstr ""
+msgstr "Bien qu'elle soit utilisée à une position correspondant à une chaîne de format, « %s » n'est pas une chaîne valide de format %s . Motif : %s\n"
 
 #: src/xg-message.c:95
 #, c-format
@@ -4093,6 +4093,10 @@ msgid ""
 "Please consider using a format string with named arguments,\n"
 "and a mapping instead of a tuple for the arguments.\n"
 msgstr ""
+"la chaîne de format « %s » avec des arguments non nommés ne peut pas être traduite correctement :\n"
+"Le traducteur ne sait pas comment réordonner les arguments.\n"
+"Veuillez utiliser une chaîne de format avec des arguments nommés,\n"
+"et une correspondance plutôt qu'un n-uple pour les arguments.\n"
 
 #: src/xg-message.c:298
 msgid ""
@@ -4100,6 +4104,9 @@ msgid ""
 "gettext(\"\") returns the header entry with\n"
 "meta information, not the empty string.\n"
 msgstr ""
+"msgid est vide.  Il est réservé par GNU gettext:\n"
+"gettext(\"\") renvoie l'entrée de l'entête avec\n"
+"les métadonnées, et non pas la chaîne vide.\n"
 
 #: src/xg-message.c:339
 #, c-format
@@ -4113,7 +4120,7 @@ msgstr "%s%s: ceci est l'occurrence avec le pluriel."
 
 #: src/xg-message.c:343
 msgid "Workaround: If the msgid is a sentence, change the wording of the sentence; otherwise, use contexts for disambiguation."
-msgstr ""
+msgstr "Palliatif : si msgid est une phrase, modifiez ses mots ; sinon utilisez les contextes pour l'homonymie."
 
 #: src/xg-mixed-string.c:496
 #, c-format
