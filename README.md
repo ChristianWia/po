@@ -1,4 +1,4 @@
 # po
 translations of .po files :
 
-gphoto2 from https://raw.githubusercontent.com/gphoto/gphoto2
+gphoto2 from https://github.com/gphoto/gphoto2
