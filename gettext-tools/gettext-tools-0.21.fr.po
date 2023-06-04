@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gettext-tools 0.21\n"
 "Report-Msgid-Bugs-To: bug-gettext@gnu.org\n"
 "POT-Creation-Date: 2020-07-26 21:56+0200\n"
-"PO-Revision-Date: 2023-06-04 21:15+0200\n"
+"PO-Revision-Date: 2023-06-04 21:35+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -4244,7 +4244,7 @@ msgid ""
 "as specified in https://www.python.org/peps/pep-0263.html.\n"
 msgstr ""
 "Veuillez spécifier l'encodage de la source avec l'option « --from-code » ou avec un commentaire\n"
-"comme spécifié sur la page https://www.python.org/peps/pep-0263.html.\n"
+"comme indiqué sur la page https://www.python.org/peps/pep-0263.html.\n"
 
 #: src/x-python.c:336
 #, c-format
@@ -4255,7 +4255,7 @@ msgid ""
 msgstr ""
 "%s:%d : séquence longue d'octets multiples incomplète.\n"
 "Veuillez spécifier l'encodage de la source avec l'option « --from-code » ou avec un commentaire\n"
-"comme spécifié sur la page https://www.python.org/peps/pep-0263.html.\n"
+"comme indiqué sur la page https://www.python.org/peps/pep-0263.html.\n"
 
 #: src/x-python.c:488
 #, c-format
@@ -4266,7 +4266,7 @@ msgid ""
 msgstr ""
 "%s:%d : séquence d'octets multiples invalide.\n"
 "Veuillez spécifier l'encodage de la source avec l'option « --from-code » ou avec un commentaire\n"
-"comme spécifié sur la page https://www.python.org/peps/pep-0263.html.\n"
+"comme indiqué sur la page https://www.python.org/peps/pep-0263.html.\n"
 
 #: src/x-python.c:497
 #, c-format
@@ -4277,7 +4277,7 @@ msgid ""
 msgstr ""
 "%s:%d : séquence d'octets multiples incomplète à la fin du fichier.\n"
 "Veuillez spécifier l'encodage de la source avec l'option « --from-code » ou avec un commentaire\n"
-"comme spécifié sur la page https://www.python.org/peps/pep-0263.html.\n"
+"comme indiqué sur la page https://www.python.org/peps/pep-0263.html.\n"
 
 #: src/x-python.c:506
 #, c-format
@@ -4288,7 +4288,7 @@ msgid ""
 msgstr ""
 "%s:%d : séquence d'octets multiples incomplète à la fin de la ligne.\n"
 "Veuillez spécifier l'encodage de la source avec l'option « --from-code » ou avec un commentaire\n"
-"comme spécifié sur la page : https://www.python.org/peps/pep-0263.html.\n"
+"comme indiqué sur la page : https://www.python.org/peps/pep-0263.html.\n"
 
 #: src/x-python.c:679
 #, c-format
@@ -4427,7 +4427,7 @@ msgstr "après « < »"
 
 #: libgettextpo/markup.c:1495 libgettextpo/markup.c:1527
 msgid "elements still open"
-msgstr "élément encore ouvert"
+msgstr "éléments encore ouverts"
 
 #: libgettextpo/markup.c:1500
 msgid "missing '>'"
@@ -4443,7 +4443,7 @@ msgstr "dans un nom d’attribut"
 
 #: libgettextpo/markup.c:1513
 msgid "inside an open tag"
-msgstr "dans une balise ouverte"
+msgstr "dans une balise ouvrante"
 
 #: libgettextpo/markup.c:1517
 msgid "after '='"
