@@ -138,7 +138,7 @@ msgstr "L’élément autovideosink ne fonctionne pas."
 
 #: gst/playback/gstplaysink.c:2534
 msgid "Custom text sink element is not usable."
-msgstr "L’élément récepteur de text personnalisé n’est pas utilisable."
+msgstr "L’élément récepteur de texte personnalisé n’est pas utilisable."
 
 #: gst/playback/gstplaysink.c:2909
 msgid "No volume control found"
@@ -272,7 +272,7 @@ msgstr "MSZH sans perte"
 # http://fr.wikipedia.org/wiki/Run-length_encoding
 #: gst-libs/gst/pbutils/descriptions.c:230
 msgid "Run-length encoding"
-msgstr "Codage par plages"
+msgstr "Codage RLE par plages"
 
 #. subtitle formats with static descriptions
 #: gst-libs/gst/pbutils/descriptions.c:276
@@ -713,11 +713,11 @@ msgstr "Densité de pixels verticale annoncée par le média (image/vidéo), en 
 
 #: gst-libs/gst/tag/tags.c:209
 msgid "ID3v2 frame"
-msgstr "Frame ID3v2"
+msgstr "Trame ID3v2"
 
 #: gst-libs/gst/tag/tags.c:209
 msgid "unparsed id3v2 tag frame"
-msgstr "frame tag id3v2 non analysé"
+msgstr "balise de trame id3v2 non analysée"
 
 #: gst-libs/gst/tag/tags.c:213
 msgid "musical-key"
@@ -729,7 +729,7 @@ msgstr "Clef initiale dans laquelle démarre le son"
 
 #: tools/gst-device-monitor.c:300 tools/gst-play.c:1632
 msgid "Print version information and exit"
-msgstr "Affiche la version et quit"
+msgstr "Affiche la version et quitte"
 
 #: tools/gst-device-monitor.c:302
 msgid "Don't exit after showing the initial device list, but wait for devices to added/removed."
@@ -758,7 +758,7 @@ msgstr "Mise en cache…"
 
 #: tools/gst-play.c:422
 msgid "Clock lost, selecting a new one\n"
-msgstr "Horloge perdu, sélection d’une nouvelle\n"
+msgstr "Horloge perdue, sélection d’une nouvelle\n"
 
 #: tools/gst-play.c:452 tools/gst-play.c:499 tools/gst-play.c:980
 #: tools/gst-play.c:1486
@@ -847,7 +847,7 @@ msgstr "augmenter la vitesse de lecture"
 
 #: tools/gst-play.c:1431
 msgid "decrease playback rate"
-msgstr "baisser la vitesse de lecture"
+msgstr "diminuer la vitesse de lecture"
 
 #: tools/gst-play.c:1432
 msgid "change playback direction"
@@ -892,7 +892,7 @@ msgstr "Afficher des informations sur l’état et les notifications de proprié
 
 #: tools/gst-play.c:1629
 msgid "Control playback behaviour setting playbin 'flags' property"
-msgstr "Contrôler le comportement de lecture en modifiant la pripriété du « drapeau » playbin"
+msgstr "Contrôler le comportement de lecture en modifiant la propriété du « drapeau » playbin"
 
 #: tools/gst-play.c:1634
 msgid "Video sink to use (default is autovideosink)"
@@ -944,7 +944,7 @@ msgstr "Utiliser le pipeline playbin3 (la valeur par défaut dépend de la varia
 
 #: tools/gst-play.c:1664
 msgid "Keep showing the last frame on EOS until quit or playlist change command (gapless is ignored)"
-msgstr "Continuer à afficher la dernière frame après la fin de lecture jusqu'à la fin de programme ou une nouvelle commande de lecture (la lecture sans blanc est ignorée)"
+msgstr "Continuer à afficher la dernière trame après la fin de lecture jusqu'à la fin de programme ou une nouvelle commande de lecture (la lecture sans blanc est ignorée)"
 
 #: tools/gst-play.c:1743
 #, c-format
