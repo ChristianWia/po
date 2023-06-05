@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gettext-tools 0.21\n"
 "Report-Msgid-Bugs-To: bug-gettext@gnu.org\n"
 "POT-Creation-Date: 2020-07-26 21:56+0200\n"
-"PO-Revision-Date: 2023-06-04 21:35+0200\n"
+"PO-Revision-Date: 2023-06-05 10:15+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -782,7 +782,7 @@ msgstr "Dans la directive numéro %u, « ~:[ » n'est pas suivi de deux clause
 #: src/format-lisp.c:3329 src/format-scheme.c:3265
 #, c-format
 msgid "In the directive number %u, '~;' is used in an invalid position."
-msgstr "Dans la directive numéro %u, « ~; » est utilisé à une place incorrecte."
+msgstr "Dans la directive numéro %u, « ~; » est utilisé à une position incorrecte."
 
 #: src/format-lisp.c:3435 src/format-scheme.c:3357
 msgid "The string refers to some argument in incompatible ways."
@@ -1533,14 +1533,14 @@ msgid ""
 "you have translated each and every message in your program.  Where an exact\n"
 "match cannot be found, fuzzy matching is used to produce better diagnostics.\n"
 msgstr ""
-"msgcmp permet de comparer deux fichiers .po de type Uniforum\n"
+"Permet de comparer deux fichiers .po de type Uniforum\n"
 "et de vérifier qu'ils contiennent le même ensemble de chaînes « msgid ».\n"
-"Le fichier def.po contient les anciennes traductions.\n"
+"Le fichier def.po existant contient les traductions.\n"
 "Le fichier ref.pot est soit le dernier fichier .po créé, soit un \n"
 "fichier modèle .pot (créé en général par xgettext).\n"
 "Vous pouvez ainsi vérifier que vous avez traduit tous les messages\n"
 "de votre programme.  Lorsqu'une correspondance exacte n'est pas possible,\n"
-"une correspondance floue est utilisé pour un meilleur diagnostic.\n"
+"une correspondance approximative est utilisée pour un meilleur diagnostic.\n"
 
 #: src/msgcmp.c:229
 #, c-format
@@ -1550,7 +1550,7 @@ msgstr "  def.po                      traductions\n"
 #: src/msgcmp.c:231
 #, c-format
 msgid "  ref.pot                     references to the sources\n"
-msgstr "  ref.pot                     références aux sources\n"
+msgstr "  ref.pot                     références des sources\n"
 
 #: src/msgcmp.c:236 src/msgmerge.c:604
 #, c-format
@@ -1565,7 +1565,7 @@ msgstr "  -m, --multi-domain          appliquer ref.pot à chaque domaine défin
 #: src/msgcmp.c:240 src/msgmerge.c:611
 #, c-format
 msgid "  -N, --no-fuzzy-matching     do not use fuzzy matching\n"
-msgstr "  -N, --no-fuzzy-matching     ne pas utiliser la correspondance floue\n"
+msgstr "  -N, --no-fuzzy-matching     ne pas utiliser la correspondance approximative\n"
 
 #: src/msgcmp.c:242
 #, c-format
@@ -1631,13 +1631,12 @@ msgid ""
 "PO file to define them.  File positions from all PO files will be\n"
 "cumulated.\n"
 msgstr ""
-"msgcomm permet de trouver les messages communs à un ensemble de fichiers .po spécifiés.\n"
-"L'option « -> » ou « --more-than » exige un plus grand nombre d'occurrences communes.\n"
-"Inversement l'option « -< » ou « --less-than » exige moins d'occurrences communes. Par exemple,\n"
-"« --less-than=2 » ne garde que les messages uniques.  Les traductions et commentaires\n"
-"seront accumulés, sauf si l'option « --use-first » est utilisée. Dans ce dernier cas,\n"
-"ils seront pris dans le premier fichier .po où ils ont été définis.\n"
-"Les commentaires de position de tous les fichiers .po seront accumulés.\n"
+"Permet de trouver les messages communs à un ensemble de fichiers .po spécifiés.\n"
+"L'option « --more-than » exige un plus grand nombre d'occurrences communes.\n"
+"avant l'impression. Inversement l'option « --less-than » exige moins d'occurrences communes. Par exemple,\n"
+"« --less-than=2 » ne garde que les messages uniques.  Les traductions, les commentaires\n"
+"et les commentaires extraits seront préservés et seront pris dans le premier fichier .po\n"
+"qui les définit. Les positions de tous les fichiers .po seront cumulées.\n"
 
 #: src/msgcomm.c:399
 #, c-format
@@ -1645,7 +1644,7 @@ msgid ""
 "  ->, --more-than=NUMBER      print messages with more than this many\n"
 "                              definitions, defaults to 1 if not set\n"
 msgstr ""
-"  ->, --more-than=N                   afficher les messages avec plus que de N\n"
+"  ->, --more-than=N                   afficher les messages ayant plus de N\n"
 "                              définitions (1 par défaut)\n"
 
 #: src/msgcomm.c:449 src/xgettext.c:1214
@@ -1656,7 +1655,7 @@ msgstr "      --omit-header           ne pas créer d'en-têtes de la forme « 
 #: src/msgconv.c:309
 #, c-format
 msgid "Converts a translation catalog to a different character encoding.\n"
-msgstr "msgconv permet de modifier l'encodage utilisé dans un catalogue de traduction.\n"
+msgstr "Permet de modifier l'encodage utilisé dans un catalogue de traduction.\n"
 
 #: src/msgconv.c:333
 #, c-format
@@ -1714,11 +1713,11 @@ msgid ""
 "xgettext).  Untranslated entries are assigned a translation that is\n"
 "identical to the msgid.\n"
 msgstr ""
-"msgen permet de créer un catalogue anglais de traduction.\n"
+"Permet de créer un catalogue anglais de traduction.\n"
 "Le fichier d'entrée est soit le dernier fichier .po anglais créé,\n"
 "soit un fichier modèle .pot (créé en général par xgettext).\n"
 "Le texte original anglais du champ « msgid » est alors utilisé\n"
-"comme traduction pour les messages non traduits.\n"
+"pour traduire à l'identique, les messages non encore renseignés.\n"
 
 #: src/msgen.c:319
 #, c-format
@@ -1744,11 +1743,11 @@ msgid ""
 "msgexec's output.  msgexec's return code is the maximum return code\n"
 "across all invocations.\n"
 msgstr ""
-"msgexec permet d'appliquer une commande à toutes les traductions d'un catalogue\n"
+"Permet d'appliquer une commande à toutes les traductions d'un catalogue\n"
 "de traductions. La commande peut être n'importe quel programme qui lit une traduction depuis l'entrée\n"
 "standard.  Elle est appelée une fois pour chaque traduction.  Sa sortie devient\n"
-"la sortie de msgexec.  msgexec renvoie un code qui correspond au maximum du code de\n"
-"retour pour toutes les invocations.\n"
+"la sortie de msgexec.  msgexec renvoie un code qui correspond au maximum des codes de\n"
+"retour de chacune des invocations.\n"
 
 #: src/msgexec.c:274
 #, c-format, no-wrap
@@ -1797,7 +1796,7 @@ msgstr "Usage : %s [OPTION] FILTRE [OPTION_DU_FILTRE]\n"
 #: src/msgfilter.c:415
 #, c-format
 msgid "Applies a filter to all translations of a translation catalog.\n"
-msgstr "msgfilter permet d'appliquer un filtre à toutes les traductions d'un catalogue.\n"
+msgstr "Permet d'appliquer un filtre à toutes les traductions d'un catalogue.\n"
 
 #: src/msgfilter.c:439
 #, c-format
@@ -1899,7 +1898,7 @@ msgstr "%s a besoin de l'option « -l locale »"
 #: src/msgfmt.c:569 src/msgfmt.c:597
 #, c-format
 msgid "%s requires a \"--template template\" specification"
-msgstr "%s a besoin de l'option « --template template »"
+msgstr "%s a besoin de l'option « --template modèle »"
 
 #: src/msgfmt.c:576 src/msgfmt.c:604
 #, c-format
@@ -1962,7 +1961,7 @@ msgstr "Usage : %s [OPTION] fichier.po ...\n"
 #: src/msgfmt.c:908
 #, c-format
 msgid "Generate binary message catalog from textual translation description.\n"
-msgstr "msgfmt permet de créer un catalogue binaire de messages à partir de la description textuelle des traductions.\n"
+msgstr "Permet de créer un catalogue binaire de messages à partir de la description textuelle des traductions.\n"
 
 #: src/msgfmt.c:920
 #, c-format
@@ -2069,7 +2068,7 @@ msgstr "Emplacement du fichier de sortie en mode C# :\n"
 #: src/msgfmt.c:977 src/msgunfmt.c:471
 #, c-format
 msgid "  -d DIRECTORY                base directory for locale dependent .dll files\n"
-msgstr "  -d DOSSIER                  répertoire de base pour les fichiers .dll dépendants de la « locale »\n"
+msgstr "  -d DOSSIER                  répertoire de base pour les fichiers .dll dépendant de la « locale »\n"
 
 #: src/msgfmt.c:979
 #, c-format
@@ -2108,7 +2107,7 @@ msgstr "Options du mode de saisie bureau :\n"
 #: src/msgfmt.c:999
 #, c-format
 msgid "  --template=TEMPLATE         a .desktop file used as a template\n"
-msgstr "  --template=TEMPLATE         un fichier .desktop utilisé comme modèle\n"
+msgstr "  --template=MODèLE         un fichier .desktop utilisé comme modèle\n"
 
 #: src/msgfmt.c:1001 src/msgfmt.c:1020
 #, c-format
@@ -2142,7 +2141,7 @@ msgstr "Options du mode XML :\n"
 #: src/msgfmt.c:1014
 #, c-format
 msgid "  -L, --language=NAME         recognise the specified XML language\n"
-msgstr "  -L, --language=NOM          reconnaître le dialect XML spécifié\n"
+msgstr "  -L, --language=NOM          reconnaître la langue XML spécifiée\n"
 
 #: src/msgfmt.c:1018
 #, c-format
@@ -2213,12 +2212,12 @@ msgid ""
 "                                (big or little, default depends on platform)\n"
 msgstr ""
 "      --endianness=ORDRE_DES_OCTETS   écrit les octets des entiers 32 bits\n"
-"                                      suivant l'ordre choisi : big, little, default (dépendant du système)\n"
+"                                      suivant l'ordre choisi : big, little, default (dépend du système)\n"
 
 #: src/msgfmt.c:1061
 #, c-format
 msgid "      --no-hash               binary file will not include the hash table\n"
-msgstr "      --no-hash               ne pas inclure la table de hachage dans le fichier binaire\n"
+msgstr "      --no-hash               ne pas inclure la table de hash dans le fichier binaire\n"
 
 #: src/msgfmt.c:1070
 #, c-format
@@ -2238,7 +2237,7 @@ msgstr "AVERTISSEMENT : l'en-tête du fichier .po est absent ou invalide\n"
 #: src/msgfmt.c:1190
 #, c-format
 msgid "warning: charset conversion will not work\n"
-msgstr "AVERTISSEMENT : la conversion d'encodage ne fonctionnera pas\n"
+msgstr "AVERTISSEMENT : la conversion des caractères ne fonctionnera pas\n"
 
 #: src/msgfmt.c:1214
 #, c-format
@@ -2303,7 +2302,7 @@ msgid ""
 "Extracts all messages of a translation catalog that match a given pattern\n"
 "or belong to some given source files.\n"
 msgstr ""
-"msggrep permet d'extraire tous les messages d'un catalogue de traduction qui concordent avec\n"
+"Permet d'extraire tous les messages d'un catalogue de traduction qui correspondent à\n"
 "un motif particulier ou qui appartiennent à des fichiers sources donnés.\n"
 
 #: src/msggrep.c:541
@@ -2360,7 +2359,7 @@ msgstr ""
 "Lorsqu'au moins deux critères de sélection sont spécifiés, l'ensemble des messages sélectionnés\n"
 "est l'union des messages sélectionnés par chaque critère.\n"
 "\n"
-"syntaxe du MOTIF-MSGCTXT, du MOTIF-MSGID, du MOTIF-MSGSTR, du MOTIF-COMMENTAIRE\n"
+"Syntaxe du MOTIF-MSGCTXT, du MOTIF-MSGID, du MOTIF-MSGSTR, du MOTIF-COMMENTAIRE\n"
 "ou du MOTIF-COMMENTAIRE-EXTRAIT :\n"
 "  [-E | -F] [-e MOTIF | -f FICHIER]...\n"
 "Les MOTIFs sont par défaut des expressions rationnelles, ou des expressions rationnelles étendues\n"
@@ -2451,7 +2450,7 @@ msgstr ""
 #: src/msginit.c:432
 #, c-format
 msgid "  -o, --output-file=FILE      write output to specified PO file\n"
-msgstr "  -o, --output-file=FICHIER   écrire les données en sortie dans le FICHIER spécifié\n"
+msgstr "  -o, --output-file=FICHIER   écrire les données en sortie dans le FICHIER .po spécifié\n"
 
 #: src/msginit.c:434
 #, c-format
@@ -2544,7 +2543,7 @@ msgstr "Aucun jeu de caractères n'est spécifié pour le domaine « %s » dan
 #: src/msgl-cat.c:305 src/xg-message.c:337
 #, c-format
 msgid "msgid '%s' is used without plural and with plural."
-msgstr "msgid '%s' est utilisé sans le pluriel et avec."
+msgstr "msgid '%s' est utilisé sans et avec le pluriel."
 
 #: src/msgl-cat.c:403 src/msgl-iconv.c:363
 #, c-format
@@ -2586,7 +2585,7 @@ msgid ""
 "Either change all msgids and msgctxts to be pure ASCII, or ensure they are\n"
 "UTF-8 encoded from the beginning, i.e. already in your source code files.\n"
 msgstr ""
-"La conversion du fichier%s depuis l'encodage %s vers l'encodage %s\n"
+"La conversion du fichier %s depuis l'encodage %s vers l'encodage %s\n"
 "modifie certaines chaînes msgid ou msgctxt.\n"
 "Vous pouvez soit changer tous les msgid et les msgctxt vers du pur ASCII ou vous assurer qu'ils sont\n"
 "encodés en UTF-8 depuis l'origine, c-à-d dans vos fichiers de code source.\n"
@@ -2699,14 +2698,14 @@ msgstr "nplurals = %lu"
 #, c-format
 msgid "but some messages have only one plural form"
 msgid_plural "but some messages have only %lu plural forms"
-msgstr[0] "mais certains messages n'ont qu'une forme de pluriel"
+msgstr[0] "mais certains messages n'ont qu'une forme au pluriel"
 msgstr[1] "mais certains messages n'ont que %lu formes de pluriel"
 
 #: src/msgl-check.c:494
 #, c-format
 msgid "but some messages have one plural form"
 msgid_plural "but some messages have %lu plural forms"
-msgstr[0] "mais certains messages ont une forme de pluriel"
+msgstr[0] "mais certains messages ont une forme au pluriel"
 msgstr[1] "mais certains messages ont %lu formes de pluriel"
 
 #: src/msgl-check.c:518
@@ -2837,18 +2836,18 @@ msgid ""
 "comments and file positions will be preserved.  Where an exact match\n"
 "cannot be found, fuzzy matching is used to produce better results.\n"
 msgstr ""
-"msgmerge permet de fusionner deux fichiers .po de type Uniforum.\n"
-"Le fichier def.po contient d'anciennes traductions qui sont réutilisées dans\n"
+"Permet de fusionner deux fichiers .po de type Uniforum.\n"
+"Le fichier def.po existant contient les traductions qui sont réutilisées dans\n"
 "la nouvelle traduction si les chaînes à traduire correspondent.\n"
 "Les commentaires sont préservés, sauf les commentaires extraits\n"
 "du code source et les commentaires de position (« #: ») qui sont sont éliminés.\n"
 "Le fichier ref.po est soit le dernier fichier .po créé contenant les messages\n"
-"sources originaux à jour (mais contenant de vieilles traductions),\n"
+"sources originaux à jour (mais contenant de anciennes traductions),\n"
 "soit un fichier modèle .pot (généralement créé avec xgettext).\n"
 "Les traductions et les commentaires sont éliminés, sauf les commentaires pointés\n"
 "(de type « #. ») et les commentaires de position (« #: ») qui sont conservés.\n"
 "Lorsqu'une correspondance exacte n'est pas possible,\n"
-"une correspondance floue (fuzzy) est utilisée pour produire un meilleur résultat. \n"
+"une correspondance approximative (fuzzy) est utilisée pour produire un meilleur résultat. \n"
 
 #: src/msgmerge.c:560
 #, c-format
@@ -2929,7 +2928,7 @@ msgstr ""
 #: src/msgmerge.c:608
 #, c-format
 msgid "      --for-msgfmt            produce output for '%s', not for a translator\n"
-msgstr "      --for-msgfmt            produire une sortie pour \"%s\", pas pour un traducteur\n"
+msgstr "      --for-msgfmt            produire une sortie pour « %s », pas pour un traducteur\n"
 
 #: src/msgmerge.c:613
 #, c-format
@@ -2954,7 +2953,7 @@ msgstr "Ce message ne devrait pas définir de forme au pluriel"
 #: src/msgmerge.c:2112
 #, c-format
 msgid "%sRead %ld old + %ld reference, merged %ld, fuzzied %ld, missing %ld, obsolete %ld.\n"
-msgstr "%s lues %ld anciennes + %ld références, %ld fusionnées, %ld approximatives, %ld manquantes, %ld périmées.\n"
+msgstr "%s lues %ld anciennes + %ld références, %ld fusionnées, %ld approximatives, %ld manquantes, %ld obsolètes.\n"
 
 #: src/msgmerge.c:2120 src/urlget.c:300 src/urlget.c:348 src/urlget.c:391
 #: src/urlget.c:434
@@ -2975,7 +2974,7 @@ msgstr "Usage : %s [OPTION] [FICHIER]...\n"
 #: src/msgunfmt.c:429
 #, c-format
 msgid "Convert binary message catalog to Uniforum style .po file.\n"
-msgstr "msgunfmt permet de convertir un catalogue binaire de traductions en fichier .po de type Uniforum\n"
+msgstr "Permet de convertir un catalogue binaire de traductions en fichier .po de type Uniforum\n"
 
 #: src/msgunfmt.c:438
 #, c-format
@@ -3068,7 +3067,7 @@ msgid ""
 "specified, they will be taken from the first translation.  File positions\n"
 "will be cumulated.  When using the --unique option, duplicates are discarded.\n"
 msgstr ""
-"msguniq permet de trouver et d'unifier les doublons dans un catalogue de traductions.\n"
+"Permet de trouver et d'unifier les doublons dans un catalogue de traductions.\n"
 "De tels doublons constituent des entrées invalides pour des programmes\n"
 "tels que msgftm, msgmerge ou msgcat. Par défaut les doublons sont unifiés.\n"
 "   Lorsque l'option « --repeated » est utilisée, seuls les messages en double sont\n"
@@ -3353,7 +3352,7 @@ msgstr "Danilo Segan"
 #: src/recode-sr-latin.c:150
 #, c-format, no-wrap
 msgid "Recode Serbian text from Cyrillic to Latin script.\n"
-msgstr "Réencode du texte serbe du Cyrillique vers le Latin.\n"
+msgstr "Réencode le texte serbe du Cyrillique vers le Latin.\n"
 
 #: src/recode-sr-latin.c:153
 #, c-format, no-wrap
@@ -3390,7 +3389,7 @@ msgid ""
 "Fetches and outputs the contents of an URL.  If the URL cannot be accessed,\n"
 "the locally accessible FILE is used instead.\n"
 msgstr ""
-"urlget permet de récupérer et d'afficher le contenu d'une URL.\n"
+"Permet de récupérer et d'afficher le contenu d'une URL.\n"
 "Si l'URL ne peut être atteintte, le FICHIER local est utilisé.\n"
 
 #: src/urlget.c:229
@@ -3421,7 +3420,7 @@ msgstr " délai expiré.\n"
 #: src/urlget.c:442
 #, c-format
 msgid " failed.\n"
-msgstr " échoué.\n"
+msgstr " échec.\n"
 
 #: src/write-catalog.c:125
 msgid "Cannot output multiple translation domains into a single file with the specified output format. Try using PO file syntax instead."
@@ -3437,7 +3436,7 @@ msgstr "Le catalogue de messages contient des traductions dépendantes du contex
 
 #: src/write-catalog.c:196
 msgid "message catalog has plural form translations, but the output format does not support them. Try generating a Java class using \"msgfmt --java\", instead of a properties file."
-msgstr "Le catalogue de messages contient des traductions avec des formes au pluriel mais le format de sortie ne les supporte pas. Essayez plutôt de produire une classe Java en utilisant « msgfmt --java »."
+msgstr "Le catalogue de messages contient des traductions avec des formes au pluriel mais le format de sortie ne les supporte pas. Essayez plutôt de produire une classe Java en utilisant « msgfmt --java » à la place d'un fichier de propriétés."
 
 #: src/write-catalog.c:201
 msgid "message catalog has plural form translations, but the output format does not support them."
@@ -3722,7 +3721,7 @@ msgstr "la forme singulier ou pluriel ne correspond pas au contexte"
 #: src/xg-encoding.c:76
 #, c-format
 msgid "Non-ASCII character at %s%s."
-msgstr "caractère non ASCII à la position %s%s."
+msgstr "caractère non ASCII dans %s%s."
 
 #: src/xg-encoding.c:80
 #, c-format
@@ -3782,7 +3781,7 @@ msgstr "AVERTISSEMENT : pour le fichier « %s », l'extension « %s » est 
 #: src/xgettext.c:1055
 #, c-format
 msgid "Extract translatable strings from given input files.\n"
-msgstr "xgettext analyse des fichiers de code source et permet d'en extraire les chaînes qui peuvent être traduites dans d'autres langues.\n"
+msgstr "Analyse les fichiers d'entrée pour en extraire les chaînes à traduire.\n"
 
 #: src/xgettext.c:1078
 #, c-format
@@ -3829,7 +3828,7 @@ msgstr "  -C, --c++                   identique à « --language=C++ »\n"
 #: src/xgettext.c:1098
 #, c-format
 msgid "By default the language is guessed depending on the input file name extension.\n"
-msgstr "  Par défaut, le langage est deviné selon l'extension du nom du fichier.\n"
+msgstr "  Par défaut, le langage est deviné d'après l'extension du nom du fichier.\n"
 
 #: src/xgettext.c:1103
 #, c-format
