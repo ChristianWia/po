@@ -11,10 +11,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gettext-tools 0.21\n"
+"Project-Id-Version: gettext-tools 0.22\n"
 "Report-Msgid-Bugs-To: bug-gettext@gnu.org\n"
 "POT-Creation-Date: 2023-06-15 23:40+0200\n"
-"PO-Revision-Date: 2023-06-05 10:15+0200\n"
+"PO-Revision-Date: 2023-06-18 15:20+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -33,7 +33,7 @@ msgstr "Argument invalide « %s » pour « %s »"
 #: gnulib-lib/argmatch.c:146
 #, c-format
 msgid "ambiguous argument %s for %s"
-msgstr "Argument ambigu %s pour %s"
+msgstr "argument ambigu %s pour %s"
 
 #: gnulib-lib/argmatch.c:165
 msgid "Valid arguments are:"
@@ -61,7 +61,7 @@ msgstr "Impossible de supprimer le fichier temporaire « %s »"
 
 #: gnulib-lib/closeout.c:66
 msgid "write error"
-msgstr "Erreur d'écriture"
+msgstr "erreur d'écriture"
 
 #: gnulib-lib/copy-file.c:192
 #, c-format
@@ -124,83 +124,79 @@ msgstr "Échec du sous-processus %s"
 
 #: gnulib-lib/gai_strerror.c:57
 msgid "Address family for hostname not supported"
-msgstr ""
+msgstr "Addresse familiale non acceptée pour un nom d'hôte."
 
 #: gnulib-lib/gai_strerror.c:58
 msgid "Temporary failure in name resolution"
-msgstr ""
+msgstr "Echec temporaire dans la résolution du nom"
 
 #: gnulib-lib/gai_strerror.c:59
 msgid "Bad value for ai_flags"
-msgstr ""
+msgstr "Valeur non autorisée de ai_flags"
 
 #: gnulib-lib/gai_strerror.c:60
 msgid "Non-recoverable failure in name resolution"
-msgstr ""
+msgstr "Echec non récupérable pendant la résolution de nom"
 
 #: gnulib-lib/gai_strerror.c:61
 msgid "ai_family not supported"
-msgstr ""
+msgstr "ai_family n'est pas pris en charge"
 
 #: gnulib-lib/gai_strerror.c:62
 msgid "Memory allocation failure"
-msgstr ""
+msgstr "Echec d'allocation mémoire"
 
 #: gnulib-lib/gai_strerror.c:63
 msgid "No address associated with hostname"
-msgstr ""
+msgstr "Aucune adresse est associée au nom de l'hôte"
 
 #: gnulib-lib/gai_strerror.c:64
 msgid "Name or service not known"
-msgstr ""
+msgstr "Nom ou service inconnu"
 
 #: gnulib-lib/gai_strerror.c:65
 msgid "Servname not supported for ai_socktype"
-msgstr ""
+msgstr "Servname n'est pas pris en charge pour ai_socktype"
 
 #: gnulib-lib/gai_strerror.c:66
 msgid "ai_socktype not supported"
-msgstr ""
+msgstr "ai_socktype n'est pas pris en charge"
 
 #: gnulib-lib/gai_strerror.c:67
-#, fuzzy
-#| msgid "write error"
 msgid "System error"
-msgstr "Erreur d'écriture"
+msgstr "Erreur système"
 
 #: gnulib-lib/gai_strerror.c:68
 msgid "Argument buffer too small"
-msgstr ""
+msgstr "Tampon d'arguments trop petit"
 
 #: gnulib-lib/gai_strerror.c:70
 msgid "Processing request in progress"
-msgstr ""
+msgstr "Traitement en cours de la requête"
 
 #: gnulib-lib/gai_strerror.c:71
 msgid "Request canceled"
-msgstr ""
+msgstr "Requête annulée"
 
 #: gnulib-lib/gai_strerror.c:72
 msgid "Request not canceled"
-msgstr ""
+msgstr "Requête non annulée"
 
 #: gnulib-lib/gai_strerror.c:73
 msgid "All requests done"
-msgstr ""
+msgstr "Toutes les requêtes ont été réalisées."
 
 #: gnulib-lib/gai_strerror.c:74
 msgid "Interrupted by a signal"
-msgstr ""
+msgstr "Interrompu par un signal"
 
 #: gnulib-lib/gai_strerror.c:75
 msgid "Parameter string not correctly encoded"
-msgstr ""
+msgstr "La chaîne des paramètres n'est pas encodée correctement"
 
 #: gnulib-lib/gai_strerror.c:87
-#, fuzzy
-#| msgid "Unknown system error"
 msgid "Unknown error"
-msgstr "Erreur système non identifiée"
+msgstr "Erreur inconnue"
 
 #: gnulib-lib/getopt.c:278
 #, c-format
@@ -240,7 +236,7 @@ msgstr "%s : l'option exige un argument -- '%c'\n"
 #: gnulib-lib/javacomp.c:103
 #, c-format
 msgid "The java program is too old. Cannot compile Java code for this old version any more."
-msgstr ""
+msgstr "Le programme java est trop ancien. Il n'est plus possible de compiler le code Java pour cette ancienne version."
 
 #: gnulib-lib/javacomp.c:147
 #, c-format
@@ -273,37 +269,32 @@ msgid "error while writing \"%s\" file"
 msgstr "Erreur pendant l'écriture du fichier « %s »"
 
 #: gnulib-lib/javacomp.c:1134
-#, fuzzy, c-format
-#| msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#, c-format
 msgid "Java compiler not found, try setting $JAVAC"
-msgstr "Le compilateur Java est introuvable. Essayez d'installer « gcj » ou de définir la variable d'environnement $JAVAC"
+msgstr "Le compilateur Java non trouvé. Essayez de définir la variable d'environnement $JAVAC"
 
 #: gnulib-lib/javaexec.c:309
-#, fuzzy, c-format
-#| msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#, c-format
 msgid "Java virtual machine not found, try setting $JAVA"
-msgstr "La machine virtuelle Java est introuvable. Essayez d'installer « gij » ou de définir la variable d'environnement $JAVA"
+msgstr "Machine virtuelle Java non trouvée. Essayez de définir la variable d'environnement $JAVA"
 
-#: gnulib-lib/obstack.c:337 gnulib-lib/obstack.c:339
-#: gnulib-lib/xalloc-die.c:34 gnulib-lib/xsetenv.c:37 src/msgl-check.c:563
-#: src/po-lex.c:83 src/po-lex.c:102 libgettextpo/gettext-po.c:1328
-#: libgettextpo/obstack.c:337 libgettextpo/obstack.c:339
-#: libgettextpo/xalloc-die.c:34
+#: gnulib-lib/obstack.c:337 gnulib-lib/obstack.c:339 gnulib-lib/xalloc-die.c:34
+#: gnulib-lib/xsetenv.c:37 src/msgl-check.c:563 src/po-lex.c:83
+#: src/po-lex.c:102 libgettextpo/gettext-po.c:1328 libgettextpo/obstack.c:337
+#: libgettextpo/obstack.c:339 libgettextpo/xalloc-die.c:34
 #, c-format
 msgid "memory exhausted"
 msgstr "Mémoire épuisée"
 
 #: gnulib-lib/openat-die.c:38
-#, fuzzy, c-format
-#| msgid "error reading current directory"
+#, c-format
 msgid "unable to record current working directory"
-msgstr "Erreur de lecture du dossier actuel"
+msgstr "impossible d'enregistrer le dossier actuel de travail"
 
 #: gnulib-lib/openat-die.c:57
-#, fuzzy, c-format
-#| msgid "failed to create directory \"%s\""
+#, c-format
 msgid "failed to return to initial working directory"
-msgstr "Échec lors de la création du dossier « %s »"
+msgstr "Échec lors du retour au dossier initial de travail"
 
 #: gnulib-lib/os2-spawn.c:45
 #, c-format
@@ -339,7 +330,7 @@ msgstr "Impossible d'établir des entrées/sorties non bloquantes pour le sous-p
 #: gnulib-lib/pipe-filter-ii.c:457
 #, c-format
 msgid "communication with %s subprocess failed"
-msgstr "Échec de communication avec le sous-processus %s"
+msgstr "échec de communication avec le sous-processus %s"
 
 #: gnulib-lib/pipe-filter-ii.c:577
 #, c-format
@@ -544,7 +535,7 @@ msgstr "impossible d’analyser la règle CLDR"
 #: src/cldr-plurals.c:369
 #, c-format
 msgid "extra operand %s"
-msgstr "opèrande supplémentaire %s"
+msgstr "opérande supplémentaire %s"
 
 #: src/file-list.c:53 src/msggrep.c:240 src/open-catalog.c:124
 #: src/read-mo.c:270 src/read-tcl.c:126 src/urlget.c:216
@@ -596,88 +587,74 @@ msgid "'%s' is not a valid %s format string, unlike '%s'. Reason: %s"
 msgstr "« %s » n'est pas une chaîne de format %s valide, contrairement à « %s ». Raison : %s"
 
 #: src/format-c++-brace.c:270
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the argument %d is negative."
+#, c-format
 msgid "In the directive number %u, the arg-id is too large."
-msgstr "Dans la directive numéro %u, l'argument %d est négatif."
+msgstr "Dans la directive numéro %u, arg-id est trop grand."
 
 #: src/format-c++-brace.c:383 src/format-c++-brace.c:477
-#, fuzzy, c-format
-#| msgid "In the directive number %u, a width is given twice."
+#, c-format
 msgid "In the directive number %u, the width's arg-id is too large."
-msgstr "Dans la directive numéro %u, la longueur est indiquée deux fois."
+msgstr "Dans la directive numéro %u, l'arg-id de la largeur est trop grand."
 
 #: src/format-c++-brace.c:438
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the width's argument number 0 is not a positive integer."
+#, c-format
 msgid "In the directive number %u, the width's arg-id is not terminated through '}'."
-msgstr "Dans la directive numéro %u, l'argument de largeur numéro 0 n'est pas un nombre entier positif."
+msgstr "Dans la directive numéro %u, l'arg-id  de la largeur n'est pas terminé par '}'."
 
 #: src/format-c++-brace.c:532
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the precision is missing."
+#, c-format
 msgid "In the directive number %u, the precision's arg-id is not terminated through '}'."
-msgstr "Dans la directive numéro %u, la précision est absente."
+msgstr "Dans la directive numéro %u,  l'arg-id de la précision n'est pas terminé avec '}'."
 
 #: src/format-c++-brace.c:593
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the character '%c' is not a valid conversion specifier."
+#, c-format
 msgid "In the directive number %u, the character '%c' is not a standard type specifier."
-msgstr "Dans la directive numéro %u, le caractère « %c » n'est pas un spécificateur de conversion valide."
+msgstr "Dans la directive numéro %u, le caractère « %c » n'est pas un spécificateur de type standard."
 
 #: src/format-c++-brace.c:594
-#, fuzzy, c-format
-#| msgid "The character that terminates the directive number %u is not a valid conversion specifier."
+#, c-format
 msgid "The character that terminates the directive number %u is not a standard type specifier."
-msgstr "Le caractère qui termine la directive numéro %u n'est pas un spécificateur de conversion valide."
+msgstr "Le caractère qui termine la directive numéro %u n'est pas un spécificateur de type standard."
 
 #: src/format-c++-brace.c:602
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the size specifier is incompatible with the conversion specifier '%c'."
+#, c-format
 msgid "In the directive number %u, the sign specification is incompatible with the type specifier '%c'."
-msgstr "Dans la directive numéro %u, l'indicateur de taille est incompatible avec l'indicateur de conversion « %c »."
+msgstr "Dans la directive numéro %u, l'indicateur de signe n'est pas compatible avec l'indicateur de type « %c »."
 
 #: src/format-c++-brace.c:610
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the size specifier is incompatible with the conversion specifier '%c'."
+#, c-format
 msgid "In the directive number %u, the '#' option is incompatible with the type specifier '%c'."
-msgstr "Dans la directive numéro %u, l'indicateur de taille est incompatible avec l'indicateur de conversion « %c »."
+msgstr "Dans la directive numéro %u, l'option « # » n'est pas compatible avec l'inditaeur de type « %c »."
 
 #: src/format-c++-brace.c:618
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the size specifier is incompatible with the conversion specifier '%c'."
+#, c-format
 msgid "In the directive number %u, the '0' option is incompatible with the type specifier '%c'."
-msgstr "Dans la directive numéro %u, l'indicateur de taille est incompatible avec l'indicateur de conversion « %c »."
+msgstr "Dans la directive numéro %u, l'option « 0 » n'est pas compatible avec l'indicateur de type « %c »."
 
 #: src/format-c++-brace.c:626
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the size specifier is incompatible with the conversion specifier '%c'."
+#, c-format
 msgid "In the directive number %u, the precision specification is incompatible with the type specifier '%c'."
-msgstr "Dans la directive numéro %u, l'indicateur de taille est incompatible avec l'indicateur de conversion « %c »."
+msgstr "Dans la directive numéro %u, l'indicateur de précision n'est pas compatible avec l'indicateur de type « %c »."
 
 #: src/format-c++-brace.c:634
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the size specifier is incompatible with the conversion specifier '%c'."
+#, c-format
 msgid "In the directive number %u, the 'L' option is incompatible with the type specifier '%c'."
-msgstr "Dans la directive numéro %u, l'indicateur de taille est incompatible avec l'indicateur de conversion « %c »."
+msgstr "Dans la directive numéro %u, l'option « L » n'est pas compatible avec l'indicateur de type « %c »."
 
 #: src/format-c++-brace.c:735
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the substring \"%s\" is not a valid date/time style."
+#, c-format
 msgid "The directive number %u, with all of its options, is not applicable to any type."
-msgstr "Dans la directive numéro %u, la sous-chaîne « %s » n'a pas un format de date/heure valide."
+msgstr "Dans la directive numéro %u avec toutes ses options ne peut s'appliquer à aucun type."
 
 #: src/format-c++-brace.c:747
-#, fuzzy, c-format
-#| msgid "The string ends in the middle of a directive."
+#, c-format
 msgid "The string ends in the middle of the directive number %u."
-msgstr "La chaîne se termine au milieu d'une directive."
+msgstr "La chaîne se termine au milieu de la directive numéro %u."
 
 #: src/format-c++-brace.c:755
-#, fuzzy, c-format
-#| msgid "The directive number %u ends with an invalid character instead of '}'."
+#, c-format
 msgid "The directive number %u is not terminated through '}'."
-msgstr "La directive numéro %u se termine par un caractère invalide au lieu de « } »."
+msgstr "La directive numéro %u ne se termine pas par « } »."
 
 #: src/format-c++-brace.c:777 src/format-csharp.c:158 src/format-java.c:347
 msgid "The string starts in the middle of a directive: found '}' without matching '{'."
@@ -691,13 +668,12 @@ msgstr "La chaîne contient un caractère « } » solitaire après la directive 
 #: src/format-c++-brace.c:991
 #, c-format
 msgid "The format specification for argument %u in '%s' is applicable to the types %s, but the format specification for argument %u in '%s' is not."
-msgstr ""
+msgstr "L'indication de format pour l'argument %u de '%s' s'applique aux types %s, mais l'indication de format pour l'argument %u de '%s' ne le peut pas."
 
 #: src/format-c++-brace.c:1003
-#, fuzzy, c-format
-#| msgid "a format specification for arguments %u and %u doesn't exist in '%s', only one argument may be ignored"
+#, c-format
 msgid "The format specification for argument %u in '%s' uses a different presentation than the format specification for argument %u in '%s'."
-msgstr "Une spécification de format pour les arguments %u et %u n’existe pas dans « %s » ; seulement un argument peut être ignoré"
+msgstr "La spécification de format pour l'argument %u dans « %s » utilise une présentation différente de celle du format pour l'argument %u dans « %s »."
 
 #: src/format-c.c:36
 #, c-format
@@ -710,10 +686,9 @@ msgid "In the directive number %u, the token after '<' is not followed by '>'."
 msgstr "Dans la directive numéro %u, le mot après le symbole « < » n'est pas suivi de  « > »."
 
 #: src/format-c.c:42
-#, fuzzy, c-format
-#| msgid "In the directive number %u, the precision specification is invalid."
+#, c-format
 msgid "In the directive number %u, the argument size specifier is invalid."
-msgstr "Dans la directive numéro %u, l'indication de précision est incorrecte."
+msgstr "Dans la directive numéro %u, la spécification de la taille de l'argument n'est pas valide."
 
 #: src/format-c.c:45 src/format-gfc-internal.c:289
 #, c-format
@@ -724,7 +699,7 @@ msgstr "La chaîne fait appel à l'argument numéro %u mais ignore l'argument nu
 #: src/format-python.c:515 src/format-qt-plural.c:110 src/format-ruby.c:951
 #, c-format
 msgid "number of format specifications in '%s' and '%s' does not match"
-msgstr "Il n'y a pas le même nombre de spécifications de format entre « %s » et « %s »."
+msgstr "Il n'y a pas le même nombre de spécifications de format entre « %s » et « %s »"
 
 #: src/format-csharp.c:85 src/format-java.c:206
 #, c-format
@@ -763,7 +738,7 @@ msgstr "Dans la directive numéro %u, une précision n'est pas permise avant «�
 #: src/format-gcc-internal.c:335
 #, c-format
 msgid "In the directive number %u, the argument number for the precision must be equal to %u."
-msgstr "Dans la directive numéro %u, le nombre d'arguments pour la précision doit être égal à %u"
+msgstr "Dans la directive numéro %u, le nombre d'arguments pour la précision doit être égal à %u."
 
 #: src/format-gcc-internal.c:399
 #, c-format
@@ -1025,10 +1000,9 @@ msgid "In the directive number %u, '%c' cannot start a getitem argument."
 msgstr "Dans la directive numéro %u, « %c » ne peut pas débuter un argument getitem."
 
 #: src/format-python-brace.c:204
-#, fuzzy, c-format
-#| msgid "In the directive number %u, there is an unterminated format directive."
+#, c-format
 msgid "In the directive number %u, there is an unterminated getitem argument."
-msgstr "Dans la directive numéro %u, il y a une directive non fermée de format."
+msgstr "Dans la directive numéro %u, il y a un argument non terminé de getitem."
 
 #: src/format-python-brace.c:221
 #, c-format
@@ -1248,16 +1222,14 @@ msgid "cannot evaluate XPath location path: %s"
 msgstr "impossible d’évaluer l’adresse XPath : %s"
 
 #: src/locating-rule.c:94
-#, fuzzy, c-format
-#| msgid "cannot extract rules for %s"
+#, c-format
 msgid "cannot find attribute %s on %s"
-msgstr "Impossible d’extraire les règles de %s"
+msgstr "impossible de trouver l'attribut %s dans %s"
 
 #: src/locating-rule.c:113 src/locating-rule.c:328
-#, fuzzy, c-format
-#| msgid "cannot locate ITS rules for %s"
+#, c-format
 msgid "cannot locate root element"
-msgstr "Impossible de localiser les règles ITS pour %s"
+msgstr "impossible de localiser l'élément racine"
 
 #: src/locating-rule.c:250
 #, c-format
@@ -2140,7 +2112,7 @@ msgstr "%s n'est valide qu'avec %s, %s ou %s"
 #: src/msgfmt.c:711
 #, c-format
 msgid "cannot locate ITS rules for %s"
-msgstr "Impossible de localiser les règles ITS pour %s"
+msgstr "impossible de localiser les règles ITS pour %s"
 
 #. TRANSLATORS: The prefix before a statistics message.  The argument
 #. is a file name or a comma separated list of file names.
@@ -2418,10 +2390,10 @@ msgid "  -f, --use-fuzzy             use fuzzy entries in output\n"
 msgstr "  -f, --use-fuzzy             utiliser les traductions approximatives (fuzzy) dans la sortie\n"
 
 #: src/msgfmt.c:1055
-#, fuzzy, c-format
+#, c-format
 #| msgid "      --no-obsolete           remove obsolete #~ messages\n"
 msgid "      --no-convert            don't convert the messages to UTF-8 encoding\n"
-msgstr "      --no-obsolete           retirer les messages obsolètes « #~ »\n"
+msgstr "      --no-convert            ne pas convertir les messages en encodage UTF-8\n"
 
 #: src/msgfmt.c:1057
 #, c-format
@@ -2429,6 +2401,8 @@ msgid ""
 "      --no-redundancy         don't pre-expand ISO C 99 <inttypes.h>\n"
 "                                format string directive macros\n"
 msgstr ""
+"      --no-redundancy         ne pas prédévelopper les macros des directives de format de chaîne\n"
+"                                ISO C 99 <inttypes.h>\n"
 
 #: src/msgfmt.c:1060
 #, c-format
@@ -2758,7 +2732,7 @@ msgstr "Le jeu de caractères actuel « %s » n'est pas un nom d'encodage port
 #: src/msgl-cat.c:189 src/msgl-iconv.c:273
 #, c-format
 msgid "two different charsets \"%s\" and \"%s\" in input file"
-msgstr "Le fichier d'entrée contient deux jeux de caractères différents « %s » et « %s »"
+msgstr "le fichier d'entrée contient deux jeux de caractères différents « %s » et « %s »"
 
 #: src/msgl-cat.c:204
 #, c-format
@@ -2778,12 +2752,12 @@ msgstr "msgid '%s' est utilisé sans et avec le pluriel."
 #: src/msgl-cat.c:414 src/msgl-iconv.c:381
 #, c-format
 msgid "target charset \"%s\" is not a portable encoding name."
-msgstr "Le jeu de caractères cible « %s » n'est pas un nom d'encodage portable."
+msgstr "le jeu de caractères cible « %s » n'est pas un nom d'encodage portable."
 
 #: src/msgl-cat.c:422 src/msgl-iconv.c:390
 #, c-format
 msgid "Cannot write the control characters that protect file names with spaces in the %s encoding"
-msgstr ""
+msgstr "Impossible d'écrire les caractères de contôle qui protègent les noms de fichiers avec des espaces dans l'encodage %s"
 
 #: src/msgl-cat.c:474 src/msgl-cat.c:480 src/msgl-cat.c:497
 #: src/msgl-charset.c:91 src/msgl-charset.c:126 src/po-xerror.c:126
@@ -2814,16 +2788,13 @@ msgstr ""
 "Pour choisir un encodage différent, utilisez l'option « --to-code ».\n"
 
 #: src/msgl-cat.c:498
-#, fuzzy, c-format
-#| msgid ""
-#| "Input files contain messages in different encodings, UTF-8 among others.\n"
-#| "Converting the output to UTF-8.\n"
+#, c-format
 msgid ""
 "Input files contain messages referenced in file names with spaces.\n"
 "Converting the output to %s.\n"
 msgstr ""
-"Les fichiers d'entrée contiennent des messages dans plusieurs encodages, dont l'UTF-8.\n"
-"L'ensemble a été converti en UTF-8.\n"
+"Les fichiers d'entrée contiennent des messages référencés avec des noms de fichiers contenant des espaces.\n"
+"La sortie est convertie en %s.\n"
 
 #: src/msgl-cat.c:536
 #, c-format
@@ -3133,7 +3104,7 @@ msgstr "Emplacement du fichier de sortie en mode mise à jour :\n"
 #: src/msgmerge.c:585
 #, c-format
 msgid "The result is written back to def.po.\n"
-msgstr "  Le résultat est réécrit dans le fichier def.po.\n"
+msgstr " Le résultat est réécrit dans le fichier def.po.\n"
 
 #: src/msgmerge.c:587
 #, c-format
@@ -3558,7 +3529,7 @@ msgstr "AVERTISSEMENT : syntaxe \\uxxxx incorrecte pour un caractère Unicode"
 #: src/read-properties.c:429
 #, c-format
 msgid "warning: lone surrogate U+%04X"
-msgstr "avertissement : substitut isolé U+%04X"
+msgstr "AVERTISSEMENT : substitut isolé U+%04X"
 
 #: src/read-properties.c:499 src/read-properties.c:534
 msgid "warning: invalid Unicode character"
@@ -3852,12 +3823,12 @@ msgstr "%s:%d : AVERTISSEMENT : expression rationnelle non terminée"
 #: src/x-python.c:1602 src/x-vala.c:1322 src/x-ycp.c:698 src/x-ycp.c:773
 #, c-format
 msgid "%s:%d: error: too many open parentheses"
-msgstr ""
+msgstr "%s:%d : erreur : trop de parenthèses ouvertes"
 
 #: src/x-c.c:1117 src/x-vala.c:509
 #, c-format
 msgid "%s:%d: warning: hexadecimal escape sequence out of range"
-msgstr ""
+msgstr "%s:%d: AVERTISSEMENT : séquence échappée hexadécimale hors limites"
 
 #: src/x-c.c:1206 src/x-csharp.c:1333 src/x-python.c:1103 src/x-tcl.c:804
 #: src/x-vala.c:597
@@ -3959,7 +3930,7 @@ msgstr "%s:%d : AVERTISSEMENT : caractère « ) » trouvé à la place de «
 #: src/x-tcl.c:898
 #, c-format
 msgid "%s:%d: error: too many open braces"
-msgstr ""
+msgstr "%s:%d : erreur : trop d'accolades ouvertes"
 
 #: src/x-csharp.c:2009 src/x-java.c:1644
 #, c-format
@@ -3969,12 +3940,12 @@ msgstr "%s:%d : AVERTISSEMENT : caractère « } » trouvé à la place de «
 #: src/x-elisp.c:452
 #, c-format
 msgid "%s:%d: error: too deeply nested escape sequence"
-msgstr ""
+msgstr "%s:%d : erreur : niveau d'imbrication trop complexe des séquences échappées"
 
 #: src/x-elisp.c:649 src/x-librep.c:606 src/x-lisp.c:949 src/x-scheme.c:690
 #, c-format
 msgid "%s:%d: error: too deeply nested objects"
-msgstr ""
+msgstr "%s:%d : erreur : niveau d'imbrication trop complexe des objets"
 
 #: src/xg-arglist-parser.c:388
 #, c-format
@@ -3984,12 +3955,12 @@ msgstr "définition d'argument ambiguë pour le mot-clef '%.*s'"
 #: src/xg-arglist-parser.c:450
 #, c-format
 msgid "warning: missing context for keyword '%.*s'"
-msgstr "avertissement : contexte absent pour le mot-clé « %.*s »"
+msgstr "AVERTISSEMENT : contexte absent pour le mot-clé « %.*s »"
 
 #: src/xg-arglist-parser.c:475
 #, c-format
 msgid "warning: missing context for plural argument of keyword '%.*s'"
-msgstr "avertissement : contexte absent pour argument pluriel du mot-clé « %.*s »"
+msgstr "AVERTISSEMENT : contexte absent pour argument pluriel du mot-clé « %.*s »"
 
 #: src/xg-arglist-parser.c:496
 #, c-format
@@ -4012,31 +3983,29 @@ msgid "Non-ASCII string at %s%s."
 msgstr "Chaîne non-ASCII à %s%s ."
 
 #: src/xg-encoding.c:92
-#, fuzzy, c-format
-#| msgid "Non-ASCII string at %s%s."
+#, c-format
 msgid "Non-ASCII XML tag at %s%s."
-msgstr "Chaîne non-ASCII à %s%s ."
+msgstr "Balise XML non-ASCII en %s%s ."
 
 #: src/xg-encoding.c:118
 #, c-format
 msgid "Character at %s%s is not UTF-8 encoded."
-msgstr ""
+msgstr "Le caractère en %s%s n'est pas encodé UTF-8."
 
 #: src/xg-encoding.c:123
-#, fuzzy, c-format
-#| msgid "Non-ASCII comment at or before %s%s."
+#, c-format
 msgid "Comment at or before %s%s is not UTF-8 encoded."
-msgstr "commentaire non-ASCII dans ou avant %s%s ."
+msgstr "Le commentaire en ou avant %s%s n'est pas encodé UTF-8."
 
 #: src/xg-encoding.c:128
 #, c-format
 msgid "String at %s%s is not UTF-8 encoded."
-msgstr ""
+msgstr "La chaîne à %s%s n'est pas encodée UTF-8."
 
 #: src/xg-encoding.c:134
 #, c-format
 msgid "XML tag at %s%s is not UTF-8 encoded."
-msgstr ""
+msgstr "La balise XML en %s%s n'est pas encodée UTF-8."
 
 #: src/xgettext.c:590
 #, c-format
@@ -4066,7 +4035,7 @@ msgstr "xgettext ne peut pas fonctionner sans mot clé à rechercher"
 #: src/xgettext.c:749
 #, c-format
 msgid "The option '%s' is deprecated."
-msgstr ""
+msgstr "L'option '%s' est obsolète."
 
 #: src/xgettext.c:873
 #, c-format
@@ -4076,7 +4045,7 @@ msgstr "AVERTISSEMENT : le fichier de règle ITS « %s » n’existe pas"
 #: src/xgettext.c:951
 #, c-format
 msgid "warning: a fallback ITS rule file '%s' is used; it may not be in sync with the upstream"
-msgstr "avertissement : utilisation du fichier de repli des règles ITS « %s » ; il peut être désynchronisé avec le flux montant"
+msgstr "AVERTISSEMENT : utilisation du fichier de repli des règles ITS « %s » ; il peut être désynchronisé avec le flux montant"
 
 #: src/xgettext.c:961
 #, c-format
@@ -4313,10 +4282,9 @@ msgid "      --itstool               write out itstool comments\n"
 msgstr "      --itstool               envoyer sur la sortie les commentaires d’itstool\n"
 
 #: src/xgettext.c:1224
-#, fuzzy, c-format
-#| msgid "  -s, --sort-output           generate sorted output\n"
+#, c-format
 msgid "  -s, --sort-output           generate sorted output (deprecated)\n"
-msgstr "  -s, --sort-output           trier les données de sortie\n"
+msgstr "  -s, --sort-output           générer des sorties triées (obsolète)\n"
 
 #: src/xgettext.c:1230
 #, c-format
@@ -4519,21 +4487,20 @@ msgid "%s:%d: warning: unterminated XML markup"
 msgstr "%s:%d : AVERTISSEMENT : balisage XML non terminé"
 
 #: src/x-javascript.c:1370
-#, fuzzy, c-format
-#| msgid "%s:%d: warning: unterminated string"
+#, c-format
 msgid "%s:%d: warning: ignoring CDATA section"
-msgstr "%s:%d : AVERTISSEMENT : chaîne non terminée"
+msgstr "%s:%d : AVERTISSEMENT : section CDATA ignorée"
 
 #: src/x-javascript.c:1729 src/x-lua.c:1130 src/x-php.c:1527
 #: src/x-python.c:1642 src/x-tcl.c:772
 #, c-format
 msgid "%s:%d: error: too many open brackets"
-msgstr ""
+msgstr "%s:%d : erreur : trop de crochets ouverts"
 
 #: src/x-javascript.c:1814
 #, c-format
 msgid "%s:%d: error: too many open XML elements"
-msgstr ""
+msgstr "%s:%d : erreur : trop d'éléments XML ouverts"
 
 #: src/x-perl.c:341
 #, c-format
@@ -4571,16 +4538,14 @@ msgid "%s:%d: invalid interpolation (\"\\U\") of 8bit character \"%c\""
 msgstr "%s:%d : interpolation invalide (« \\U ») de caractères de 8 bits « %c »"
 
 #: src/x-perl.c:1728 src/x-perl.c:2780 src/x-perl.c:3122
-#, fuzzy, c-format
-#| msgid "%s:%d: warning: unterminated regular expression"
+#, c-format
 msgid "%s:%d: error: too deeply nested expressions"
-msgstr "%s:%d : AVERTISSEMENT : expression rationnelle non terminée"
+msgstr "%s:%d : erreur : niveau d'imbrication trop complexe des expressions"
 
 #: src/x-po.c:228
-#, fuzzy, c-format
-#| msgid "input file doesn't contain a header entry with a charset specification"
+#, c-format
 msgid "%s: input file doesn't contain a header entry with a charset specification"
-msgstr "Aucun jeu de caractères n'a été défini dans l'en-tête du fichier d'entrée"
+msgstr "%s : définition du jeu de caractères non trouvée dans l'entête du fichier d'entrée"
 
 #: src/x-python.c:281
 msgid ""
@@ -4682,7 +4647,7 @@ msgstr "%s:%lu : AVERTISSEMENT : la syntaxe « $\"...\" » ne doit pas être
 #: src/x-sh.c:1512
 #, c-format
 msgid "%s:%d: error: too deeply nested command list"
-msgstr ""
+msgstr "%s:%d : erreur : niveau d'imbrication trop complexe de la liste des commandes"
 
 #: src/x-vala.c:647
 #, c-format
