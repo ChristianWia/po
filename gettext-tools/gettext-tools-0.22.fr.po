@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gettext-tools 0.22\n"
 "Report-Msgid-Bugs-To: bug-gettext@gnu.org\n"
 "POT-Creation-Date: 2023-06-15 23:40+0200\n"
-"PO-Revision-Date: 2023-06-18 15:20+0200\n"
+"PO-Revision-Date: 2023-06-21 16:39+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -3823,12 +3823,12 @@ msgstr "%s:%d : AVERTISSEMENT : expression rationnelle non terminée"
 #: src/x-python.c:1602 src/x-vala.c:1322 src/x-ycp.c:698 src/x-ycp.c:773
 #, c-format
 msgid "%s:%d: error: too many open parentheses"
-msgstr "%s:%d : erreur : trop de parenthèses ouvertes"
+msgstr "%s:%d : ERREUR : trop de parenthèses ouvertes"
 
 #: src/x-c.c:1117 src/x-vala.c:509
 #, c-format
 msgid "%s:%d: warning: hexadecimal escape sequence out of range"
-msgstr "%s:%d: AVERTISSEMENT : séquence échappée hexadécimale hors limites"
+msgstr "%s:%d : AVERTISSEMENT : séquence échappée hexadécimale hors limites"
 
 #: src/x-c.c:1206 src/x-csharp.c:1333 src/x-python.c:1103 src/x-tcl.c:804
 #: src/x-vala.c:597
@@ -3930,7 +3930,7 @@ msgstr "%s:%d : AVERTISSEMENT : caractère « ) » trouvé à la place de «
 #: src/x-tcl.c:898
 #, c-format
 msgid "%s:%d: error: too many open braces"
-msgstr "%s:%d : erreur : trop d'accolades ouvertes"
+msgstr "%s:%d : ERREUR : trop d'accolades ouvertes"
 
 #: src/x-csharp.c:2009 src/x-java.c:1644
 #, c-format
@@ -3940,12 +3940,12 @@ msgstr "%s:%d : AVERTISSEMENT : caractère « } » trouvé à la place de «
 #: src/x-elisp.c:452
 #, c-format
 msgid "%s:%d: error: too deeply nested escape sequence"
-msgstr "%s:%d : erreur : niveau d'imbrication trop complexe des séquences échappées"
+msgstr "%s:%d : ERREUR : niveau d'imbrication trop complexe des séquences échappées"
 
 #: src/x-elisp.c:649 src/x-librep.c:606 src/x-lisp.c:949 src/x-scheme.c:690
 #, c-format
 msgid "%s:%d: error: too deeply nested objects"
-msgstr "%s:%d : erreur : niveau d'imbrication trop complexe des objets"
+msgstr "%s:%d : ERREUR : niveau d'imbrication trop complexe des objets"
 
 #: src/xg-arglist-parser.c:388
 #, c-format
@@ -4396,12 +4396,12 @@ msgstr ""
 #: src/xg-message.c:344
 #, c-format
 msgid "%s%s: Here is the occurrence without plural."
-msgstr "%s%s: ceci est l'occurrence sans pluriel."
+msgstr "%s%s : ceci est l'occurrence sans pluriel."
 
 #: src/xg-message.c:346
 #, c-format
 msgid "%s%s: Here is the occurrence with plural."
-msgstr "%s%s: ceci est l'occurrence avec le pluriel."
+msgstr "%s%s : ceci est l'occurrence avec le pluriel."
 
 #: src/xg-message.c:348
 msgid "Workaround: If the msgid is a sentence, change the wording of the sentence; otherwise, use contexts for disambiguation."
@@ -4410,7 +4410,7 @@ msgstr "Palliatif : si msgid est une phrase, modifiez ses mots ; sinon utilisez 
 #: src/xg-mixed-string.c:496
 #, c-format
 msgid "%s:%d: warning: lone surrogate U+%04X"
-msgstr "%s:%d : avertissement : substitut isolé U+%04X"
+msgstr "%s:%d : AVERTISSEMENT : substitut isolé U+%04X"
 
 #: src/x-java.c:1208 src/x-java.c:1252
 #, c-format
@@ -4495,12 +4495,12 @@ msgstr "%s:%d : AVERTISSEMENT : section CDATA ignorée"
 #: src/x-python.c:1642 src/x-tcl.c:772
 #, c-format
 msgid "%s:%d: error: too many open brackets"
-msgstr "%s:%d : erreur : trop de crochets ouverts"
+msgstr "%s:%d : ERREUR : trop de crochets ouverts"
 
 #: src/x-javascript.c:1814
 #, c-format
 msgid "%s:%d: error: too many open XML elements"
-msgstr "%s:%d : erreur : trop d'éléments XML ouverts"
+msgstr "%s:%d : ERREUR : trop d'éléments XML ouverts"
 
 #: src/x-perl.c:341
 #, c-format
@@ -4540,7 +4540,7 @@ msgstr "%s:%d : interpolation invalide (« \\U ») de caractères de 8 bits �
 #: src/x-perl.c:1728 src/x-perl.c:2780 src/x-perl.c:3122
 #, c-format
 msgid "%s:%d: error: too deeply nested expressions"
-msgstr "%s:%d : erreur : niveau d'imbrication trop complexe des expressions"
+msgstr "%s:%d : ERREUR : niveau d'imbrication trop complexe des expressions"
 
 #: src/x-po.c:228
 #, c-format
@@ -4647,7 +4647,7 @@ msgstr "%s:%lu : AVERTISSEMENT : la syntaxe « $\"...\" » ne doit pas être
 #: src/x-sh.c:1512
 #, c-format
 msgid "%s:%d: error: too deeply nested command list"
-msgstr "%s:%d : erreur : niveau d'imbrication trop complexe de la liste des commandes"
+msgstr "%s:%d : ERREUR : niveau d'imbrication trop complexe de la liste des commandes"
 
 #: src/x-vala.c:647
 #, c-format
