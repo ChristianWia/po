@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gold 2.39.90\n"
 "Report-Msgid-Bugs-To: https://sourceware.org/bugzilla/\n"
 "POT-Creation-Date: 2022-12-31 12:19+0000\n"
-"PO-Revision-Date: 2023-06-26 16:27+0200\n"
+"PO-Revision-Date: 2023-06-26 19:10+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -53,17 +53,17 @@ msgstr "symbole local %u non-défini ou écarté depuis l'objet %s dans la GOT"
 #: aarch64.cc:532 arm.cc:7413 mips.cc:6704
 #, c-format
 msgid "undefined or discarded symbol %s in GOT"
-msgstr "symbole %s non définit ou écarté dans la GOT"
+msgstr "symbole %s non défini ou écarté dans la GOT"
 
 #: aarch64.cc:1932 arm.cc:6543 object.cc:901
 #, c-format
 msgid "invalid symbol table name index: %u"
-msgstr "index de nom de table de symboles invalide : %u"
+msgstr "index de nom de table des symboles invalide : %u"
 
 #: aarch64.cc:1940 arm.cc:6551 object.cc:907
 #, c-format
 msgid "symbol table name section has wrong type: %u"
-msgstr "la section de nom de table de symboles a un type incorrect : %u"
+msgstr "la section de nom de table des symboles a un type incorrect : %u"
 
 #: aarch64.cc:3832 arm.cc:10905 mips.cc:9608 powerpc.cc:2911 target.cc:94
 #, c-format
@@ -221,12 +221,12 @@ msgstr "référence de script ou d'expression à %s"
 #: archive.cc:232
 #, c-format
 msgid "%s: no archive symbol table (run ranlib)"
-msgstr "%s : pas de table de symboles dans l'archive (exécuter ranlib)"
+msgstr "%s : pas de table des symboles dans l'archive (exécuter ranlib)"
 
 #: archive.cc:324
 #, c-format
 msgid "%s: bad archive symbol table names"
-msgstr "%s : mauvais noms pour la table de symboles de l'archive"
+msgstr "%s : mauvais noms pour la table des symboles de l'archive"
 
 #: archive.cc:356
 #, c-format
@@ -340,12 +340,12 @@ msgstr "A trouvé des sections d'entrée non EXIDX dans une section de sortie EX
 #: arm.cc:6058 arm.cc:6062
 #, c-format
 msgid "unwinding may not work because EXIDX input section %u of %s is not in EXIDX output section"
-msgstr "l'exécution de l'épilogue peut ne pas fonctionner parce que la section d'entrée EXIDX %u de %s n'est pas dans ma section de sortie EXIDX"
+msgstr "l'exécution de l'épilogue peut ne pas fonctionner parce que la section d'entrée EXIDX %u de %s n'est pas dans la section de sortie EXIDX"
 
 #: arm.cc:6875
 #, c-format
 msgid "EXIDX section %s(%u) links to invalid section %u in %s"
-msgstr "la section EXIDX %s (%u) a un lien vers la section %u dans %s"
+msgstr "la section EXIDX %s (%u) a un lien vers la section non valide %u dans %s"
 
 #: arm.cc:6884
 #, c-format
@@ -1116,12 +1116,12 @@ msgstr "impossible d'analyser la section eh_frame %s(%s) ; il se peut que l'ICF
 #: icf.cc:1058
 #, c-format
 msgid "%s: ICF Converged after %u iteration(s)"
-msgstr "%s : ICF a convergé après %u iteration(s)"
+msgstr "%s : ICF a convergé après %u itération(s)"
 
 #: icf.cc:1061
 #, c-format
 msgid "%s: ICF stopped after %u iteration(s)"
-msgstr "%s : ICF s'est arrêté après %u iteration(s)"
+msgstr "%s : ICF s'est arrêté après %u itération(s)"
 
 #: icf.cc:1075
 #, c-format
@@ -1147,7 +1147,7 @@ msgstr "version différente des données d'édition incrémentale"
 
 #: incremental.cc:433
 msgid "command line changed"
-msgstr "la ligne de commande a changée"
+msgstr "la ligne de commande a changé"
 
 #: incremental.cc:460
 #, c-format
@@ -1319,7 +1319,7 @@ msgstr "%s : changement de taille de la section ; rééditer les liens avec --
 
 #: layout.cc:4556
 msgid "out of patch space for symbol table; relink with --incremental-full"
-msgstr "à court d'espace de retouche pour la table de symboles ; rééditer les liens avec --incremental-full"
+msgstr "à court d'espace de retouche pour la table des symboles ; rééditer les liens avec --incremental-full"
 
 #: layout.cc:4627
 msgid "out of patch space for section header table; relink with --incremental-full"
@@ -1404,7 +1404,7 @@ msgstr "la longueur de la section des chaînes fusionnables n'est pas un multipl
 #: merge.cc:464
 #, c-format
 msgid "%s: last entry in mergeable string section '%s' not null terminated"
-msgstr "%s : la dernière entrée de la section des chaînes fusionnables « %s » ne termine pas par le caractère nul"
+msgstr "%s : la dernière entrée de la section des chaînes fusionnables « %s » ne se termine pas par le caractère nul"
 
 #: merge.cc:528
 #, c-format
@@ -1539,22 +1539,22 @@ msgstr "%s : édition de liens d'un code 32 bits avec un code 64 bits"
 #: mips.cc:9457 mips.cc:9509 mips.cc:9523
 #, c-format
 msgid "%s: linking %s module with previous %s modules"
-msgstr "%s : édition de liens du module %s avec les précédants %s modules"
+msgstr "%s : édition de liens du module %s avec les précédents %s modules"
 
 #: mips.cc:9473
 #, c-format
 msgid "%s: ABI mismatch: linking %s module with previous %s modules"
-msgstr "%s : désaccord ABI : édition de liens du module %s avec les précédants %s modules"
+msgstr "%s : désaccord ABI : édition de liens du module %s avec les précédents %s modules"
 
 #: mips.cc:9495
 #, c-format
 msgid "%s: ASE mismatch: linking %s module with previous %s modules"
-msgstr "%s : désaccord ASE : édition de liens du module %s avec les précédants %s modules"
+msgstr "%s : désaccord ASE : édition de liens du module %s avec les précédents %s modules"
 
 #: mips.cc:9536
 #, c-format
 msgid "%s: uses different e_flags (0x%x) fields than previous modules (0x%x)"
-msgstr "%s : utilise des champs de e_flags (0x%x) différents des modules précédants (0x%x)"
+msgstr "%s : utilise des champs de e_flags (0x%x) différents des modules précédents (0x%x)"
 
 #: mips.cc:9944
 #, c-format
@@ -1596,7 +1596,7 @@ msgstr "les fonctions MIPS16 et microMIPS ne peuvent pas s'appeler mutuellement"
 #: mips.cc:12327
 #, c-format
 msgid "relocation overflow: %u against '%s' defined in %s"
-msgstr "débordement de relocalisation : %u vers « %s » définit dans %s"
+msgstr "débordement de relocalisation : %u vers « %s » défini dans %s"
 
 #: mips.cc:12333
 #, c-format
@@ -1938,7 +1938,7 @@ msgstr "la valeur %g pour --hash-bucket-fraction n'est pas dans l'intervalle [0.
 msgid "Options --incremental-changed, --incremental-unchanged, --incremental-unknown require the use of --incremental"
 msgstr ""
 "Les options --incremental-changed, --incremental-unchanged, --incremental-\n"
-"unknown nécessite l'utilisation de --incremental"
+"unknown nécessitent l'utilisation de --incremental"
 
 #: options.cc:1408
 msgid "incremental linking is not compatible with -r"
@@ -2057,7 +2057,7 @@ msgstr "Appliquer des valeurs de l'édition de liens pour les relocalisation dyn
 
 #: options.h:698
 msgid "(aarch64 only) Do not apply link-time values for dynamic relocations"
-msgstr "(aarch64) Ne pas appliquer les valeurs de l'édition de liens pour les relocalisations dynamiques"
+msgstr "(aarch64 seulement) Ne pas appliquer les valeurs de l'édition de liens pour les relocalisations dynamiques"
 
 #: options.h:702
 msgid "Use DT_NEEDED only for shared libraries that are used"
@@ -2081,7 +2081,7 @@ msgstr "Choisir le format d'entrée"
 
 #: options.h:719
 msgid "Output BE8 format image"
-msgstr "Retourner une image au format BE8"
+msgstr "Renvoyer une image au format BE8"
 
 #: options.h:722
 msgid "Generate build ID note"
@@ -2154,7 +2154,7 @@ msgstr "Compresser les sections .debug_* dans le fichier de sortie"
 
 #: options.h:781
 msgid "Output cross reference table"
-msgstr "Afficher la table de références croisées"
+msgstr "Afficher la table des références croisées"
 
 #: options.h:782
 msgid "Do not output cross reference table"
@@ -2288,7 +2288,7 @@ msgstr "Ne pas exporter tous les symboles dynamiques"
 
 #: options.h:863
 msgid "Export SYMBOL to dynamic symbol table"
-msgstr "Exporter SYMBOLE vers la table de symboles dynamiques"
+msgstr "Exporter SYMBOLE vers la table des symboles dynamiques"
 
 #: options.h:863 options.h:885 options.h:1003 options.h:1020 options.h:1361
 #: options.h:1430 options.h:1444
@@ -2305,7 +2305,7 @@ msgstr "Éditer les liens des objets petits-boutistes"
 
 #: options.h:873
 msgid "Auxiliary filter for shared object symbol table"
-msgstr "Filtre auxiliaire pour la table de symboles des objets partagés"
+msgstr "Filtre auxiliaire pour la table des symboles des objets partagés"
 
 #: options.h:874 options.h:878
 msgid "SHLIB"
@@ -2313,7 +2313,7 @@ msgstr "SHLIB"
 
 #: options.h:877
 msgid "Filter for shared object symbol table"
-msgstr "Filtre pour la table de symboles des objets partagés"
+msgstr "Filtre pour la table des symboles des objets partagés"
 
 #: options.h:881
 msgid "Treat warnings as errors"
@@ -2345,11 +2345,11 @@ msgstr "(ARM seulement) Ne pas corriger les binaires conformément à l'erratum 
 
 #: options.h:896
 msgid "(AArch64 only) Fix Cortex-A53 erratum 843419"
-msgstr "(AArch64 seulement) Corriger les binaires conformément à l'erratum 843419 du Cortex-A8"
+msgstr "(AArch64 seulement) Corriger les binaires conformément à l'erratum 843419 du Cortex-A53"
 
 #: options.h:897
 msgid "(AArch64 only) Do not fix Cortex-A53 erratum 843419"
-msgstr "(AArch64 seulement) Ne pas corriger les binaires conformément à l'erratum 843419 du Cortex-A8"
+msgstr "(AArch64 seulement) Ne pas corriger les binaires conformément à l'erratum 843419 du Cortex-A53"
 
 #: options.h:900
 msgid "(AArch64 only) Fix Cortex-A53 erratum 835769"
@@ -2850,7 +2850,7 @@ msgstr "Émettre uniquement les informations de débogage de numéro de ligne"
 
 #: options.h:1236
 msgid "Strip debug symbols that are unused by gdb (at least versions <= 7.4)"
-msgstr "Éliminer les symboles de débogage qui ne sont pas utilisés par gdb (du moins pour les versions inférieures à la 7.4)"
+msgstr "Éliminer les symboles de débogage non utilisés par gdb (du moins pour les versions antérieures à la 7.4 comprise)"
 
 #: options.h:1239
 msgid "Strip LTO intermediate code sections"
@@ -3058,11 +3058,11 @@ msgstr "Ne pas avertir des symboles communs dupliqués"
 
 #: options.h:1388
 msgid "Warn when discarding version information"
-msgstr "Avertir lorsque les informations de version sont écartés"
+msgstr "Avertir lorsque les informations de version sont écartées"
 
 #: options.h:1389
 msgid "Do not warn when discarding version information"
-msgstr "Ne pas avertir lorsque les informations de version sont écartés"
+msgstr "Ne pas avertir lorsque les informations de version sont écartées"
 
 #: options.h:1392
 msgid "Warn if the stack is executable"
@@ -3070,7 +3070,7 @@ msgstr "Avertir si la pile est exécutable"
 
 #: options.h:1393
 msgid "Do not warn if the stack is executable"
-msgstr "Ne pas avertir si le tas est exécutable"
+msgstr "Ne pas avertir si la pile est exécutable"
 
 #: options.h:1396
 msgid "Don't warn about mismatched input files"
@@ -3214,7 +3214,7 @@ msgstr "Ne pas créer de copies de relocalisations"
 
 #: options.h:1502
 msgid "Mark object not to use default search paths"
-msgstr "Marquer l'objet comme ne devant pas utiliser les chemins de recherches par défaut"
+msgstr "Marquer l'objet comme ne devant pas utiliser les chemins de recherche par défaut"
 
 #: options.h:1505
 msgid "Mark DSO non-deletable at runtime"
@@ -3230,7 +3230,7 @@ msgstr "Marquer le DSO comme non disponible pour dldump()"
 
 #: options.h:1514
 msgid "Mark output as not requiring executable stack"
-msgstr "Marquer la sortie comme ne nécessitant pas une pile exécutable"
+msgstr "Marquer la sortie comme ne nécessitant pas de pile exécutable"
 
 #: options.h:1516
 msgid "Mark object for immediate function binding"
@@ -3489,7 +3489,7 @@ msgstr "%s : .opd invalide dans abiv%d"
 #: powerpc.cc:2404
 #, c-format
 msgid "%s: unexpected reloc type %u in .opd section"
-msgstr "%s : type relocalisation %u inattendue dans la section .opd"
+msgstr "%s : type relocalisation %u inattendu dans la section .opd"
 
 #: powerpc.cc:2415
 #, c-format
@@ -3509,7 +3509,7 @@ msgstr "%s : %s dépasse la taille d'un groupe"
 #: powerpc.cc:3641
 #, c-format
 msgid "%s:%s: branch in non-executable section, no long branch stub for you"
-msgstr "%s : %s : branchement dans une section non exécutable, pas d'espace d'amorçage pour branche distante pour toi"
+msgstr "%s : %s : branchement dans une section non exécutable, pas d'espace d'amorçage pour branche distante pour vous"
 
 #: powerpc.cc:3758
 #, c-format
@@ -3595,7 +3595,7 @@ msgstr "%s utilise des vecteurs ABI AltiVec, %s utilise des vecteurs ABI SPE"
 #: powerpc.cc:10374 powerpc.cc:10381
 #, c-format
 msgid "%s uses r3/r4 for small structure returns, %s uses memory"
-msgstr "%s utilise r3/r4 pour le retour de petites structures, %s utilise la mémoire"
+msgstr "%s utilise r3/r4 pour le renvoi de petites structures, %s utilise la mémoire"
 
 #: powerpc.cc:10951
 msgid "call lacks nop, can't restore toc; recompile with -fPIC"
@@ -3643,7 +3643,7 @@ msgstr "Les informations de débogage s'étendent au-delà de la section .debug_
 #: reloc.cc:317 reloc.cc:945
 #, c-format
 msgid "relocation section %u uses unexpected symbol table %u"
-msgstr "la section de relocalisation %u utilise de façon inattendue la table de symbole %u"
+msgstr "la section de relocalisation %u utilise de façon inattendue la table des symbole %u"
 
 #: reloc.cc:335 reloc.cc:962
 #, c-format
@@ -4079,7 +4079,7 @@ msgstr "%s : la définition de la version par défaut pour %s@@%s est en confli
 #: symtab.cc:1064
 #, c-format
 msgid "%s: %s: previous definition of %s@@%s here"
-msgstr "%s : %s : définition précédante de %s@@%s ici"
+msgstr "%s : %s : définition précédente de %s@@%s ici"
 
 #: symtab.cc:1206
 #, c-format
@@ -4112,7 +4112,7 @@ msgstr "versym sans nom pour le symbole %zu : %u"
 #: symtab.cc:2633
 #, c-format
 msgid "discarding version information for %s@%s, defined in unused shared library %s (linked with --as-needed)"
-msgstr "abandonne l'information de version pour %s@%s, définit dans la bibiliothèque partagée %s (liens édités avec --as-needed)"
+msgstr "abandonne l'information de version pour %s@%s, défini dans la bibiliothèque partagée %s (liens édités avec --as-needed)"
 
 #: symtab.cc:2995 symtab.cc:3141
 #, c-format
@@ -4122,12 +4122,12 @@ msgstr "%s : la section de symbole 0x%x n'est pas prise en charge"
 #: symtab.cc:3473
 #, c-format
 msgid "%s: symbol table entries: %zu; buckets: %zu\n"
-msgstr "%s : entrées de la table de symboles : %zu ; groupes de blocs : %zu\n"
+msgstr "%s : entrées de la table des symboles : %zu ; groupes de blocs : %zu\n"
 
 #: symtab.cc:3476
 #, c-format
 msgid "%s: symbol table entries: %zu\n"
-msgstr "%s : entrées de la table de symbole : %zu\n"
+msgstr "%s : entrées de la table des symboles : %zu\n"
 
 #: symtab.cc:3633
 #, c-format
@@ -4163,12 +4163,12 @@ msgstr "le symbole %s « %s » n'est pas défini localement"
 #: target-reloc.h:243
 #, c-format
 msgid "relocation refers to local symbol \"%s\" [%u], which is defined in a discarded section"
-msgstr "la relocalisation fait référence au symbole local « %s » [%u], définit dans une section rejetée"
+msgstr "la relocalisation fait référence au symbole local « %s » [%u], défini dans une section rejetée"
 
 #: target-reloc.h:251
 #, c-format
 msgid "relocation refers to global symbol \"%s\", which is defined in a discarded section"
-msgstr "la relocalisation fait référence au un symbole global « %s », définit dans une section rejetée"
+msgstr "la relocalisation fait référence au symbole global « %s », défini dans une section rejetée"
 
 #: target-reloc.h:266
 #, c-format
