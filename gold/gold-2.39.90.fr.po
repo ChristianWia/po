@@ -3,23 +3,25 @@
 # This file is distributed under the same license as the binutils package.
 #
 # Grégoire Scano <gregoire.scano@malloc.fr>, 2015, 2018-2022.
+# Christian Wiatr <w9204-fs@yahoo.com>, 2023.
 #
 # stub => espace d'amorçage
 # patch space => espace de retouche
 # relocation => relocalisation
 msgid ""
 msgstr ""
-"Project-Id-Version: gold 2.38.90\n"
+"Project-Id-Version: gold 2.39.90\n"
 "Report-Msgid-Bugs-To: https://sourceware.org/bugzilla/\n"
 "POT-Creation-Date: 2022-12-31 12:19+0000\n"
-"PO-Revision-Date: 2022-07-25 20:41+0800\n"
-"Last-Translator: Grégoire Scano <gregoire.scano@malloc.fr>\n"
+"PO-Revision-Date: 2023-06-26 16:27+0200\n"
+"Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: aarch64-reloc-property.cc:173 arm-reloc-property.cc:303
 #, c-format
@@ -399,9 +401,9 @@ msgstr "le symbole de section %u a un mauvais shndx %u"
 
 #. These are relocations which should only be seen by the
 #. dynamic linker, and should never be seen here.
-#: arm.cc:8752 arm.cc:9233 i386.cc:1950 i386.cc:2436 mips.cc:11258
-#: s390.cc:2468 s390.cc:2902 sparc.cc:2553 sparc.cc:3033 tilegx.cc:3584
-#: tilegx.cc:4139 x86_64.cc:3331 x86_64.cc:3852
+#: arm.cc:8752 arm.cc:9233 i386.cc:1950 i386.cc:2436 mips.cc:11258 s390.cc:2468
+#: s390.cc:2902 sparc.cc:2553 sparc.cc:3033 tilegx.cc:3584 tilegx.cc:4139
+#: x86_64.cc:3331 x86_64.cc:3852
 #, c-format
 msgid "%s: unexpected reloc %u in object file"
 msgstr "%s : relocalisation %u inattendue dans le fichier objet"
@@ -1298,7 +1300,7 @@ msgstr "l'argument « %s » de --build-id n'est pas reconnu"
 #: layout.cc:3561
 #, c-format
 msgid "error: --package-metadata=%s does not contain valid JSON: %s\n"
-msgstr ""
+msgstr "erreur : --package-metadata=%s contient du JSON non valide : %s\n"
 
 #: layout.cc:4131
 #, c-format
@@ -1972,7 +1974,7 @@ msgstr "--compress-debug-sections ignoré pour l'édition de liens incrémentale
 
 #: options.cc:1439
 msgid "--compress-debug-sections=zstd: gold is not built with zstd support"
-msgstr ""
+msgstr "--compress-debug-sections=zstd : gold n'est pas construit avec le support zstd"
 
 #: options.cc:1519
 msgid "May not nest groups"
@@ -2652,11 +2654,11 @@ msgstr "Ignoré pour compatibilité avec ARM"
 
 #: options.h:1106
 msgid "Generate package metadata note"
-msgstr ""
+msgstr "Générer une note sur les métadonnées du paquet."
 
 #: options.h:1107
 msgid "[=JSON]"
-msgstr ""
+msgstr "[=JSON]"
 
 #: options.h:1110 options.h:1113
 msgid "Create a position independent executable"
@@ -2892,7 +2894,7 @@ msgstr "Emplacements de tags dynamiques à réserver (5 par défaut)"
 
 #: options.h:1266
 msgid "(ARM, PowerPC only) The maximum distance from instructions in a group of sections to their stubs. Negative values mean stubs are always after the group. 1 means use default size"
-msgstr "(ARM, PowerPC seulement) La distance maximale des instructions dans un groupe de sections à leurs espace d'amorçage de l'éditeur dynamique de liens. Des valeurs négatives impliquent qu'ils se trouvent toujours après le groupe. La valeur 1 correspond à l'utilisation de la taille par défaut."
+msgstr "(ARM, PowerPC seulement) La distance maximale des instructions dans un groupe de sections à leurs espace d'amorçage de l'éditeur dynamique de liens. Des valeurs négatives impliquent qu'ils se trouvent toujours après le groupe. La valeur 1 correspond à l'utilisation de la taille par défaut"
 
 #: options.h:1272
 msgid "(PowerPC only) Allow a group of stubs to serve multiple output sections"
