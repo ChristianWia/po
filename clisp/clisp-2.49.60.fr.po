@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: clisp 2.49.60\n"
 "Report-Msgid-Bugs-To: clisp-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2017-06-25 11:29:01+0200\n"
-"PO-Revision-Date: 2023-07-18 20:27+0200\n"
+"PO-Revision-Date: 2023-07-18 23:31+0200\n"
 "Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -25,11 +25,11 @@ msgstr ""
 
 #: spvw.d:909
 msgid "*** - Program stack overflow. RESET"
-msgstr "*** - Débordement de pile de programme : RAZ"
+msgstr "*** - Débordement de la pile de programme par valeur supérieure : RAZ"
 
 #: spvw.d:924
 msgid "*** - Lisp stack overflow. RESET"
-msgstr "*** - Débordement de pile Lisp : RAZ"
+msgstr "*** - Débordement par valeur supérieure de la pile Lisp : RAZ"
 
 #: spvw.d:1089
 #, lisp-format
@@ -64,7 +64,7 @@ msgstr "le  module « %s » requiert le package %s.\n"
 
 #: spvw.d:2032
 msgid "module '%s' redefines symbol "
-msgstr "le  module « %s » définit le symbole "
+msgstr "le  module « %s » redéfinit le symbole "
 
 #: spvw.d:2034
 msgid " in the locked package "
@@ -150,7 +150,7 @@ msgstr "Internationalisation :"
 
 #: spvw.d:2097
 msgid " -L language   - set user language"
-msgstr " -L LANGUE   - séléctionne la LANGUE utilisateur"
+msgstr " -L LANGUE     - séléctionne la LANGUE utilisateur"
 
 #: spvw.d:2098
 msgid " -N nlsdir     - NLS catalog directory"
@@ -192,7 +192,7 @@ msgstr "Actions au démarrage :"
 
 #: spvw.d:2108
 msgid " -ansi         - more ANSI CL compliance"
-msgstr " -ansi         - conformation ANSI CL étendue"
+msgstr " -ansi         - conformité ANSI CL étendue"
 
 #: spvw.d:2109
 msgid " -traditional  - traditional (undoes -ansi)"
@@ -200,7 +200,7 @@ msgstr " -traditional  - traditionel (annule -ansi)"
 
 #: spvw.d:2110
 msgid " -modern       - start in a case-sensitive lowercase-preferring package"
-msgstr " -modern       - début pour un package sensible à la casse avec préférence aux minuscules"
+msgstr " -modern       - commence avec la préférence aux minuscules pour un package sensible à la casse"
 
 #: spvw.d:2111
 msgid " -p package    - start in the package"
@@ -208,7 +208,7 @@ msgstr " -p PAQUET     - démarre dans le package PAQUET"
 
 #: spvw.d:2112
 msgid " -C            - set *LOAD-COMPILING* to T"
-msgstr " -C            - affecter *LOAD-COMPILING* à T"
+msgstr " -C            - affecter T à *LOAD-COMPILING*"
 
 #: spvw.d:2113
 msgid " -norc         - do not load the user ~/.clisprc file"
@@ -216,7 +216,7 @@ msgstr " -norc         - ne pas charger le fichier utilisateur ~/.clisprc"
 
 #: spvw.d:2114
 msgid " -lp dir       - add dir to *LOAD-PATHS* (can be repeated)"
-msgstr " -lp REPERTOIRE       - ajoute REPERTOIRE à *LOAD-PATHS* (peut être répété)"
+msgstr " -lp REPERTOIRE  - ajoute REPERTOIRE à *LOAD-PATHS* (peut être répété)"
 
 #: spvw.d:2115
 msgid " -i file       - load initfile (can be repeated)"
@@ -328,7 +328,7 @@ msgstr "La valeur de malloc() = %lx n'est pas compatible avec la distribution du
 
 #: spvw.d:3086
 msgid "Only %ld bytes available."
-msgstr "Seuls %ld octets libres."
+msgstr "Seulement %ld octets libres."
 
 #: spvw.d:3321
 msgid "Could not determine the end of the SP stack!"
@@ -433,7 +433,7 @@ msgstr "Impossible d'ouvrir <%s>."
 #: spvw_global.d:628
 #, lisp-format
 msgid "CALL-WITH-TIMEOUT has failed in thread ~S."
-msgstr "CALL-WITH-TIMEOUT a échouée dans le thread ~S."
+msgstr "CALL-WITH-TIMEOUT a échoué dans le thread ~S."
 
 #: spvw_global.d:753
 #, lisp-format
@@ -446,7 +446,7 @@ msgstr "mprotect(0x%lx,%d,%d) échouée."
 
 #: spvw_sigsegv.d:25
 msgid "GC count: %lu"
-msgstr "Conpteur GC : %lu"
+msgstr "Compteur GC : %lu"
 
 #: spvw_sigsegv.d:27
 msgid "Space collected by GC:"
@@ -454,7 +454,7 @@ msgstr "Espace collecté par le GC :"
 
 #: spvw_sigsegv.d:41
 msgid "Run time:"
-msgstr "Tenps d’exécution :"
+msgstr "Temps d’exécution :"
 
 #: spvw_sigsegv.d:43
 msgid "Real time:"
@@ -466,7 +466,7 @@ msgstr "Temps GC :"
 
 #: spvw_sigsegv.d:48
 msgid "Permanently allocated: %lu bytes."
-msgstr "Alloucation  permanante : %lu octets."
+msgstr "Allocation  permanente : %lu octets."
 
 #: spvw_sigsegv.d:51
 msgid "Currently in use: %lu bytes."
@@ -482,7 +482,7 @@ msgstr "SIGSEGV ne peut être corrigé. Adresse fautive = 0x%lx."
 
 #: spvw_sigsegv.d:180
 msgid "Apollo 13 scenario: Stack overflow handling failed. On the next stack overflow we will crash!!!"
-msgstr "Scénario Apollo 13 : Réparation de débordement de pile a échoué. Au prochain débordement de pile, ça cassera!!!"
+msgstr "Scénario Apollo 13 : la réparation du débordement par valeur supérieure de la pile a échoué. Au prochain débordement de pile, ça cassera!!!"
 
 #: spvw_sigint.d:66 spvw_sigint.d:131
 msgid "Ctrl-C: User break"
@@ -563,7 +563,7 @@ msgstr "runtime trop petit (~S octets manquant)"
 
 #: spvw_memfile.d:333
 msgid "Delegating cookie not found"
-msgstr "Coockie de délégation introuvable"
+msgstr "Cookie de délégation introuvable"
 
 #: spvw_memfile.d:991 spvw_memfile.d:1847
 msgid "%s: operating system error during load of initialization file `%s'"
@@ -588,7 +588,7 @@ msgstr "%s : méthode « taille de l’image » échouée, mais l’entête de
 #: eval.d:879 init.lisp:846 init.lisp:861 compiler.lisp:1166
 #, lisp-format
 msgid "Invalid access to the value of the lexical variable ~S from within a ~S definition"
-msgstr "Accès impossible à la valeur de la varialbe lexicale ~S depuis la définition d'un ~S"
+msgstr "Accès impossible à la valeur de la variable lexicale ~S depuis la définition d'un ~S"
 
 #: eval.d:1063 init.lisp:786 init.lisp:800 compiler.lisp:924
 #, lisp-format
@@ -797,7 +797,7 @@ msgstr "~S : le symbole ~S ne peut pas être déclaré SPECIAL et définir un SY
 #: control.d:594
 #, lisp-format
 msgid "~S: too many variables and/or declarations"
-msgstr "~S: Trop de déclarations et/ou de variables"
+msgstr "~S: trop de déclarations et/ou de variables"
 
 #: control.d:871
 #, lisp-format
@@ -1135,12 +1135,12 @@ msgstr "Erreur UNIX pendant GETWD : ~S"
 #: pathname.d:5277
 #, lisp-format
 msgid "UNIX GETWD returned ~S"
-msgstr "GETWD d'UNIX a retourné ~S"
+msgstr "GETWD d'UNIX a renvoyé ~S"
 
 #: pathname.d:5443
 #, lisp-format
 msgid "UNIX REALPATH returned ~S"
-msgstr "REALPATH d'UNIX a retourné ~S"
+msgstr "REALPATH d'UNIX a renvoyé ~S"
 
 #: pathname.d:5564
 #, lisp-format
@@ -1160,7 +1160,7 @@ msgstr "~S : le fichier ~S n'existe pas"
 #: pathname.d:5652
 #, lisp-format
 msgid "~S: pathname with type but without name makes no sense: ~S"
-msgstr "~S : Un PATHNAME avec TYPE mais sans NAME est insensé: ~S"
+msgstr "~S : Un PATHNAME avec TYPE mais sans NAME n'a pas de sens : ~S"
 
 #: pathname.d:6018
 #, lisp-format
@@ -1184,7 +1184,7 @@ msgstr "Ouvrir néanmoins le fichier"
 #: pathname.d:6494
 #, lisp-format
 msgid "~S: The value of ~S should be one of ~S, ~S, ~S, or ~S, not ~S. It has been changed to ~S."
-msgstr "~S : La valeur ~S de doit se terminer par ~S, ~S, ~S, ou ~S, not ~S. Elle est remplacée par ~S."
+msgstr "~S : La valeur ~S doit se terminer par ~S, ~S, ~S, ou ~S, not ~S. Elle est remplacée par ~S."
 
 #: pathname.d:7740
 #, lisp-format
@@ -1221,12 +1221,12 @@ msgstr "~S : répertoire d'installation inconnu. Utiliser l'option -B de la lign
 #: stream.d:274 stream.d:13965
 #, lisp-format
 msgid "~S on ~S is illegal"
-msgstr "~S de/sur ~S est impossible"
+msgstr "~S sur ~S est impossible"
 
 #: stream.d:611
 #, lisp-format
 msgid "Return value ~S of call to ~S should be an integer between ~S and ~S."
-msgstr "La valeur ~S retournée par ~S doit être un entier entre ~S et ~S."
+msgstr "La valeur ~S renvoyée par ~S doit être un entier entre ~S et ~S."
 
 #: stream.d:778
 #, lisp-format
@@ -1321,7 +1321,7 @@ msgstr "jeu de caractères ~S inconnu"
 #: stream.d:5892
 #, lisp-format
 msgid "Unbuffered streams need an ~S with a bit size being a multiple of 8, not ~S"
-msgstr "Les flots non bufferisés nécessitent un ~S avec un taille (en bits) divisible par 8, et non ~S"
+msgstr "Les flux non bufferisés nécessitent un ~S avec un taille (en bits) divisible par 8, et non ~S"
 
 #: stream.d:6254
 #, lisp-format
@@ -1490,7 +1490,7 @@ msgstr "La valeur ~S renvoyée par l'appel à ~S n'est pas une chaîne."
 #: stream.d:16852
 #, lisp-format
 msgid "Return value ~S of call to ~S is not a fixnum >= 0 or NIL."
-msgstr "La valeur ~S retournée par ~S n'est pas un petit entier >= 0 ou NIL."
+msgstr "La valeur ~S renvoyée par ~S n'est pas un petit entier >= 0 ou NIL."
 
 #: stream.d:17013
 #, lisp-format
@@ -1619,7 +1619,7 @@ msgstr "~S de ~S : ~S n'a pas de définition de macro-caractère"
 #: io.d:1803
 #, lisp-format
 msgid "~S from ~S: macro character definition for ~S may not return ~S values, only one value."
-msgstr "~S de ~S : La définition du macro-caractère ~S ne doit pas retourner ~S valeurs mais au plus une."
+msgstr "~S de ~S : La définition du macro-caractère ~S ne doit pas renvoyer ~S valeurs mais une seule."
 
 #: io.d:1824 defs2.lisp:173
 #, lisp-format
@@ -1634,17 +1634,17 @@ msgstr "~S de ~S : après ~S ~S n'est plus défini comme macro-caractère de «d
 #: io.d:1868
 #, lisp-format
 msgid "~S from ~S: dispatch macro character definition for ~S after ~S may not return ~S values, only one value."
-msgstr "~S de ~S : La définition de caractère macro de «dispatch» pour ~S après ~S ne doit pas retourner ~S valeurs."
+msgstr "~S de ~S : La définition de caractère macro de «dispatch» pour ~S après ~S ne doit pas renvoyer ~S valeurs mais une seule."
 
 #: io.d:1934
 #, lisp-format
 msgid "~S from ~S: a token consisting only of dots cannot be meaningfully read in"
-msgstr "~S de ~S : Un lexème ne comprenant que des points ne peut pas être lu"
+msgstr "~S de ~S : Un lexème ne comprenant que des points ne peut pas être relu"
 
 #: io.d:2047
 #, lisp-format
 msgid "~S from ~S: too many colons in token ~S"
-msgstr "~S de ~S : Trop de deux-points dans le lexème ~S"
+msgstr "~S de ~S : trop de deux-points dans le lexème ~S"
 
 #: io.d:2054
 #, lisp-format
@@ -1674,7 +1674,7 @@ msgstr "~S : la valeur de ~S a été arbitrairement modifiée en ~S"
 #: io.d:2202
 #, lisp-format
 msgid "~S: symbol ~S is not bound, it appears that top-level ~S was called with a non-NIL recursive-p argument"
-msgstr "~S: symbol ~S is not bound, it appears that top-level ~S was called with a non-NIL recursive-p argument"
+msgstr "~S : le symbole ~S n'est pas lié, on dirait que ~S du premier niveau a été appelé récursivement avec un p argument non NIL"
 
 #: io.d:2238
 #, lisp-format
@@ -1709,7 +1709,7 @@ msgstr "~S : le «stream» d'entrée ~S se termine à l'intérieur d'un commenta
 #: io.d:2854
 #, lisp-format
 msgid "~S from ~S: font number ~S for character is too large, should be = 0"
-msgstr "~S de ~S : le numéro ~S de fonte de caractères est trop grand (doit être = 0)"
+msgstr "~S de ~S : le numéro ~S de la fonte de caractères est trop grand, doit être = 0"
 
 #: io.d:2919
 #, lisp-format
@@ -1734,7 +1734,7 @@ msgstr "~S de ~S : la base numérique ~S spécifiée entre # et R doit être ent
 #: io.d:3099
 #, lisp-format
 msgid "~S from ~S: bad syntax for complex number: #C~S"
-msgstr "~S de ~S : Syntaxe inadmissible pour un nombre complexe: #C~S"
+msgstr "~S de ~S : syntaxe non autorisée pour un nombre complexe: #C~S"
 
 #: io.d:3129
 #, lisp-format
@@ -1764,12 +1764,12 @@ msgstr "~S de ~S : longueur de ~S non valide ~S"
 #: io.d:3251
 #, lisp-format
 msgid "~S from ~S: only zeroes and ones are allowed after #*"
-msgstr "~S de ~S : Seuls 0 et 1 sont permis après #*"
+msgstr "~S de ~S : Seuls des 0 et 1 sont permis après #*"
 
 #: io.d:3398
 #, lisp-format
 msgid "~S from ~S: bad syntax for array: #A~S"
-msgstr "~S de ~S : Syntaxe inadmissible pour une matrice: #A~S"
+msgstr "~S de ~S : syntaxe non autorisée pour un tableau : #A~S"
 
 #: io.d:3462
 #, lisp-format
@@ -1854,7 +1854,7 @@ msgstr "~S de ~S : aucune structure de type ~S n'a été définie"
 #: io.d:4062
 #, lisp-format
 msgid "~S from ~S: structures of type ~S cannot be read in, missing constructor function"
-msgstr "~S de ~S : les structures de type ~S ne peuvent être lues en entrée car la fonction constructeur est absente"
+msgstr "~S de ~S : les structures de type ~S ne peuvent être relues car la fonction constructeur est absente"
 
 #: io.d:4083
 #, lisp-format
@@ -1874,7 +1874,7 @@ msgstr "~S de ~S : il manque la valeur du champ ~S dans la structure ~S"
 #: io.d:4122
 #, lisp-format
 msgid "~S from ~S: too many slots for structure ~S"
-msgstr "~S de ~S : Trop de champs pour une structure ~S"
+msgstr "~S de ~S : trop de champs pour une structure ~S"
 
 #: io.d:4160
 #, lisp-format
@@ -1894,7 +1894,7 @@ msgstr "~S de ~S : longueur non valide du vecteur de code ~S"
 #: io.d:4366
 #, lisp-format
 msgid "~S from ~S: bad syntax for pathname: #P~S"
-msgstr "~S de ~S : Syntaxe inadmissible pour un pathname: #P~S"
+msgstr "~S de ~S : syntaxe non autorisée pour un pathname: #P~S"
 
 #: io.d:4587
 #, lisp-format
@@ -2071,7 +2071,7 @@ msgstr "~S: L'objet ~S ne peut pas être poussé dans la matrice ~S car il est d
 #: array.d:4009
 #, lisp-format
 msgid "~S: dimension ~S is not of type `(INTEGER 0 (,ARRAY-DIMENSION-LIMIT))"
-msgstr "~S: La dimension ~S n'est pas de type  `(INTEGER 0 (,ARRAY-DIMENSION-LIMIT))."
+msgstr "~S: La dimension ~S n'est pas de type `(INTEGER 0 (,ARRAY-DIMENSION-LIMIT))."
 
 #: array.d:4267
 #, lisp-format
@@ -2498,7 +2498,7 @@ msgstr "~S : classe d'effet de bord non valide ~S pour la fonction ~S"
 #: record.d:439
 #, lisp-format
 msgid "~S: function ~S is too big: ~S"
-msgstr "~S : La function ~S est trop grosse: ~S"
+msgstr "~S : La fonction ~S est trop grosse: ~S"
 
 #: record.d:547
 #, lisp-format
@@ -2722,7 +2722,7 @@ msgstr "~S: ~S n'est pas une pointeur vers un environnement EVAL/APPLY"
 
 #: debug.d:1222
 msgid "APPLY frame with breakpoint for call "
-msgstr "«frame» APPLY avec point d'interception pour l'application "
+msgstr "«frame» APPLY avec point d'arrêt pour l'appel "
 
 #: debug.d:1225
 msgid "APPLY frame for call "
@@ -2730,7 +2730,7 @@ msgstr "«frame» APPLY pour l'application "
 
 #: debug.d:1242
 msgid "EVAL frame with breakpoint for form "
-msgstr "«frame» EVAL avec point d'interception pour la forme "
+msgstr "«frame» EVAL avec point d'arrêt pour la forme "
 
 #: debug.d:1245
 msgid "EVAL frame for form "
@@ -2774,7 +2774,7 @@ msgstr "«frame» BLOCK "
 
 #: debug.d:1362
 msgid "nested block frame "
-msgstr "«frame» BLOCK dépilé "
+msgstr "«frame» BLOCK imbriquée "
 
 #: debug.d:1367
 msgid " for "
@@ -2786,7 +2786,7 @@ msgstr "«frame» TAGBODY "
 
 #: debug.d:1375
 msgid "nested tagbody frame "
-msgstr "«frame» TAGBODY dépilé "
+msgstr "«frame» TAGBODY imbriquée "
 
 #: debug.d:1380
 msgid " for"
@@ -2825,7 +2825,7 @@ msgstr "~S: Type d'environnement inconnu"
 
 #: error.d:57 reploop.lisp:495
 msgid "Unprintable error message"
-msgstr "Message non imprimable"
+msgstr "Message d'erreur non imprimable"
 
 #: error.d:183
 #, lisp-format
@@ -2878,7 +2878,7 @@ msgstr "~S : ~S n'est pas un symbole, il ne peut pas être déclaré ~S"
 
 #: error.d:1092
 msgid "Remove the global SYMBOL-MACRO definition"
-msgstr "Supprimer définition globale de SYMBOL-MACRO"
+msgstr "Supprimer la définition globale de SYMBOL-MACRO"
 
 #: error.d:1094
 #, lisp-format
@@ -2967,7 +2967,7 @@ msgstr "~S : l'argument ~S doit être une chaîne"
 #: error.d:1300
 #, lisp-format
 msgid "Attempt to modify a read-only string: ~S"
-msgstr "Tentative de modification d'une chaîne non modifiable: ~S"
+msgstr "Tentative de modification d'une chaîne en lecture seule : ~S"
 
 #: error.d:1310
 #, lisp-format
@@ -3266,12 +3266,12 @@ msgstr "~S : division par zéro"
 #: aridecl.d:356
 #, lisp-format
 msgid "~S: floating point overflow"
-msgstr "~S : débordement de nombre à virgule flottante"
+msgstr "~S : débordement par valeur supérieure d'un nombre à virgule flottante"
 
 #: aridecl.d:365
 #, lisp-format
 msgid "~S: floating point underflow"
-msgstr "~S : débordement vers zéro de nombre à virgule flottante"
+msgstr "~S : débordement par valeur inférieure de nombre à virgule flottante"
 
 #: intelem.d:207 intelem.d:317
 #, lisp-format
@@ -3285,7 +3285,7 @@ msgstr "ceci n'est pas un nombre de 64 bits : ~S"
 
 #: intelem.d:1108
 msgid "bignum overflow"
-msgstr "dépassement de capacité des entiers BIGNUM"
+msgstr "dépassement de capacité par valeur supérieure des entiers BIGNUM"
 
 #: intlog.d:424
 #, lisp-format
@@ -3314,7 +3314,7 @@ msgstr "~S n'est pas une spécification de BYTE"
 
 #: intmal.d:8
 msgid "overflow during multiplication of large numbers"
-msgstr "débordement de capacité lors d'une multiplication de grands nombres"
+msgstr "débordement de capacité par valeur supérieure lors d'une multiplication de grands nombres"
 
 #: intdiv.d:383
 #, lisp-format
@@ -3516,7 +3516,7 @@ msgstr "~S : les conventions d'appel de fonction étrangère ~S se contredisent"
 #: foreign.d:3563 foreign1.lisp:1261
 #, lisp-format
 msgid "~S: :OUT argument is not a pointer: ~S"
-msgstr "~S : paramètre :OUT n'est pas indirecte: ~S"
+msgstr "~S :  l'argument :OUT n'est pas un pointeur : ~S"
 
 #: foreign.d:4215
 #, lisp-format
@@ -3550,7 +3550,7 @@ msgstr "Ignorer la création d'un objet étranger"
 #: foreign.d:4591
 #, lisp-format
 msgid "~S: cannot find ~S in ~S due to lack of dlsym() on this platform"
-msgstr "~S: impossible de trouver ~S dans ~S car plus de dlsym() disponibles sur cette plateforme"
+msgstr "~S: impossible de trouver ~S dans ~S car plus de dlsym() disponible sur cette plateforme"
 
 #: foreign.d:4655
 #, lisp-format
@@ -3636,7 +3636,7 @@ msgstr "~S : mauvais environnement de fonction ~S"
 #: init.lisp:955
 #, lisp-format
 msgid "~S: ~S is invalid since ~S is not a symbol"
-msgstr "~S : ~S est inadmissible car ~S n'est pas un symbole"
+msgstr "~S : ~S n'est pas autorisé car ~S n'est pas un symbole"
 
 #: init.lisp:1107
 #, lisp-format
@@ -3820,7 +3820,7 @@ msgstr "La macro ~S ne peut pas être appelée avec une liste pointée d'argumen
 #: defmacro.lisp:61
 #, lisp-format
 msgid "The macro ~S may not be called with ~S arguments: ~S"
-msgstr "Le macro ~S ne peut pas être appelé avec ~S arguments : ~S"
+msgstr "La macro ~S ne peut pas être appelé avec ~S arguments : ~S"
 
 #: defmacro.lisp:68 defmacro.lisp:434
 #, lisp-format
@@ -3860,7 +3860,7 @@ msgstr "La lambda-liste du macro ~S contient un ~S mal placé."
 #: defmacro.lisp:203
 #, lisp-format
 msgid "The lambda list of macro ~S contains the invalid element ~S"
-msgstr "La lambda-liste du macro ~S contient cet élément inadmissible : ~S"
+msgstr "La lambda-liste de la macro ~S contient l'élément non autorisé : ~S"
 
 #: defmacro.lisp:215
 #, lisp-format
@@ -3870,7 +3870,7 @@ msgstr "~0*Elle sera ignorée."
 #: defmacro.lisp:216
 #, lisp-format
 msgid "The lambda list of macro ~S contains an invalid keyword specification ~S"
-msgstr "La lambda-liste du macro ~S contient une spécification de mot-clé inadmissible : ~S"
+msgstr "La lambda-liste de la macro ~S contient une spécification de mot-clé non autorisée : ~S"
 
 #: defmacro.lisp:250
 #, lisp-format
@@ -3880,7 +3880,7 @@ msgstr "Il manque une variable après &REST/&BODY dans la lambda-liste du macro 
 #: defmacro.lisp:261
 #, lisp-format
 msgid "The lambda list of macro ~S contains an illegal variable after &REST/&BODY: ~S"
-msgstr "La lambda-liste du macro ~S contient une variable inadmissible après &REST/&BODY : ~S"
+msgstr "La lambda-liste de la macro ~S contient une variable non autorisée après &REST/&BODY : ~S"
 
 #: defmacro.lisp:269
 #, lisp-format
@@ -3900,12 +3900,12 @@ msgstr "La lambda-liste du macro ~S contient des éléments superflus : ~S"
 #: defmacro.lisp:325
 #, lisp-format
 msgid "The lambda list of macro ~S contains an illegal &REST variable: ~S"
-msgstr "La lambda-liste du macro ~S contient une variable &REST inadmissible : ~S"
+msgstr "La lambda-liste de la macro ~S contient une variable &REST non autorisée : ~S"
 
 #: defmacro.lisp:347
 #, lisp-format
 msgid "The lambda list of macro ~S contains an invalid &WHOLE: ~S"
-msgstr "La lambda-liste du macro ~S contient un &WHOLE inadmissible : ~S"
+msgstr "La lambda-liste de la macro ~S contient un &WHOLE non autorisé : ~S"
 
 #: defmacro.lisp:351
 #, lisp-format
@@ -3920,12 +3920,12 @@ msgstr "La lambda-liste du macro ~S contient ~S avant &KEY."
 #: defmacro.lisp:366
 #, lisp-format
 msgid "The lambda list of macro ~S contains ~S which is illegal here."
-msgstr "La lambda-liste du macro ~S contient ~S qui est inadmissible ici."
+msgstr "La lambda-liste de la macro ~S contient ~S qui n'est pas autorisé ici."
 
 #: defmacro.lisp:385
 #, lisp-format
 msgid "The lambda list of macro ~S contains an invalid element ~S"
-msgstr "La lambda-liste du macro ~S contient un élément inadmissible : ~S"
+msgstr "La lambda-liste de la macro ~S contient un élément non autorisé : ~S"
 
 #: defmacro.lisp:456
 #, lisp-format
@@ -3945,7 +3945,7 @@ msgstr "Le nom d'un macro doit être un symbole et non ~S"
 #: defmacro.lisp:493
 #, lisp-format
 msgid "Macro ~S is missing a lambda list."
-msgstr "Le macro ~S ne possède pas de lambda-liste."
+msgstr "La macro ~S ne possède pas de lambda-liste."
 
 #: macros1.lisp:25 macros1.lisp:48
 #, lisp-format
@@ -3975,7 +3975,7 @@ msgstr "~S redéfinit la constante ~S. Son ancienne valeur était ~S."
 #: macros1.lisp:161
 #, lisp-format
 msgid "Invalid syntax in ~S form: ~S."
-msgstr "Syntax invalide dans forme ~S : ~S."
+msgstr "Syntaxe non valide dans la forme ~S : ~S."
 
 #: macros1.lisp:261 places.lisp:619 places.lisp:839
 #, lisp-format
@@ -4000,7 +4000,7 @@ msgstr "L'atome ~S n'est pas utilisable en tant que clause COND."
 #: macros2.lisp:13
 #, lisp-format
 msgid "Invalid clause in ~S: ~S"
-msgstr "Clause inadmissible dans ~S : ~S"
+msgstr "Clause non autorisée dans ~S : ~S"
 
 #: macros2.lisp:26
 #, lisp-format
@@ -4835,7 +4835,7 @@ msgstr "~S ~S : il n'y a pas de ~S pour les structures anonymes."
 #: defstruct.lisp:743
 #, lisp-format
 msgid "~S ~S: invalid :TYPE option ~S"
-msgstr "~S ~S : Option :TYPE inadmissible: ~S"
+msgstr "~S ~S : Option :TYPE non autorisé : ~S"
 
 #: defstruct.lisp:750
 #, lisp-format
@@ -6456,7 +6456,7 @@ msgstr "~S : L'argument de condition exceptionnelle doit être de type STRING, S
 #: condition.lisp:682
 #, lisp-format
 msgid "~S: illegal syntax of clause ~S"
-msgstr "~S : syntaxe inadmissible de la phrase ~S"
+msgstr "~S : syntaxe non autorisée de la clause ~S"
 
 #: condition.lisp:687
 #, lisp-format
@@ -6476,7 +6476,7 @@ msgstr "~S : ~S n'est pas valable comme nom de «restart» ici. Utilisez ~S."
 #: condition.lisp:879
 #, lisp-format
 msgid "~S: invalid restart name ~S"
-msgstr "~S : Nom inadmissible pour un «restart»: ~S"
+msgstr "~S : nom pas autorisé pour un «restart»: ~S"
 
 #: condition.lisp:884
 #, lisp-format
@@ -6491,7 +6491,7 @@ msgstr "~S : ceci n'est pas une liste: ~S"
 #: condition.lisp:951 condition.lisp:1011
 #, lisp-format
 msgid "~S: invalid restart specification ~S"
-msgstr "~S : spécification inadmissible d'un «restart»: ~S"
+msgstr "~S : spécification non autorisée d'un «restart»: ~S"
 
 #: condition.lisp:964 condition.lisp:1048
 #, lisp-format
@@ -7175,7 +7175,7 @@ msgstr ", le nom d'une classe"
 #: describe.lisp:341
 #, lisp-format
 msgid ", names a built-in foreign type"
-msgstr ", nom d'un type étranger embarqué"
+msgstr ", nom d'un type étranger prédéfini"
 
 #: describe.lisp:342
 #, lisp-format
@@ -7606,7 +7606,7 @@ msgstr "Impossible de convertir la chaîne ~S en langage C à cause d'un caract�
 #: foreign1.lisp:146
 #, lisp-format
 msgid "Invalid ~S component: ~S"
-msgstr "Composant de ~S inadmissible: ~S"
+msgstr "Composant de ~S non autorisé : ~S"
 
 #: foreign1.lisp:212
 #, lisp-format
@@ -7621,7 +7621,7 @@ msgstr "Un type FFi doit être un symbole et non ~S"
 #: foreign1.lisp:223
 #, lisp-format
 msgid "Invalid FFI type: ~S"
-msgstr "Type FFI inadmissible: ~S"
+msgstr "Type FFI non autorisé : ~S"
 
 #: foreign1.lisp:328
 #, lisp-format
